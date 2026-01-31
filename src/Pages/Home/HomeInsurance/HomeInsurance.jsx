@@ -5,7 +5,7 @@ import heroImg from "../../../assets/2.png";
 const HomeInsurance = () => {
   return (
     <PageLayout
-      title="Home Insurance in Ontario"
+      title="Home Insurance"
       subtitle="Safeguard your most valuable investment with the right insurance coverage — just for you!"
       image={heroImg}
     >
