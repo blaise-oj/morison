@@ -19,7 +19,7 @@ import TenantsInsurance from "./Pages/Home/TenantsInsurance/TenantsInsurance";
 const Placeholder = ({ title }) => (
   <div style={{ padding: "120px 40px" }}>
     <h1>{title}</h1>
-    <p>Page under construction</p>
+    <p>Sorry the page is under maintainance</p>
   </div>
 );
 
