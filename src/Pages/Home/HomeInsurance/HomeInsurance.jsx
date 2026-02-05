@@ -1,6 +1,7 @@
 import React from "react";
 import PageLayout from "../../Shared/PageLayout/PageLayout";
 import heroImg from "../../../assets/2.png";
+import "./HomeInsurance.css";
 
 const HomeInsurance = () => {
   return (
@@ -16,7 +17,7 @@ const HomeInsurance = () => {
         <p><strong>Bundle options:</strong> bigger savings (home + auto + extras)</p>
 
         <p>
-          Complete the form or call <strong>1-800-463-8074</strong> to speak with a
+          Complete the form or call <strong>+1 343-512-7761</strong> to speak with a
           licensed broker about Home Insurance today.
         </p>
       </section>
@@ -137,7 +138,7 @@ const HomeInsurance = () => {
           of mind really costs.
         </p>
         <p>
-          Call <strong>1-800-463-8074</strong> or complete the form on this page.
+          Call <strong>+1 343-512-7761</strong> or complete the form on this page.
         </p>
       </section>
 

@@ -1,0 +1,156 @@
+/* General page layout */
+.business-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 60px; /* top space for navbar */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0b0a2a;
+}
+
+/* Section headings */
+.business-page h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #08103a;
+  text-align: center;
+}
+
+/* Paragraphs */
+.business-page p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* INTRO section */
+.business-intro {
+  margin-bottom: 60px;
+  background: #f4f6fb;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* BUSINESS TYPES grid */
+.business-types {
+  margin-bottom: 60px;
+}
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.business-card {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.business-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.business-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #08103a;
+}
+
+.business-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* COVERAGE section */
+.business-coverages {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.business-coverages ul {
+  list-style: inside square;
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.business-coverages li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* WHY US section */
+.business-why-us {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.business-why-us p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.business-why-us ul {
+  list-style: disc inside;
+  display: inline-block;
+  text-align: left;
+}
+
+.business-why-us li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+/* CTA button */
+.business-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.business-cta button {
+  background: #08103a;
+  color: #fff;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.business-cta button:hover {
+  background: #0b1b6c;
+  transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .business-page {
+    padding: 80px 15px 40px;
+  }
+
+  .business-page h2 {
+    font-size: 1.8rem;
+  }
+
+  .business-card {
+    padding: 20px 15px;
+  }
+
+  .business-cta button {
+    width: 100%;
+  }
+}

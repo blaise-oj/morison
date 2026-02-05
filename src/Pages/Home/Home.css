@@ -1,0 +1,158 @@
+/* ================================
+   Home Page Styling
+   Scoped only for Home.jsx
+================================ */
+
+.home-intro {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 0 1rem;
+}
+
+.home-intro h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #08003a; /* deep purple/navy accent */
+}
+
+.home-intro p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* SERVICES SECTION */
+.home-services {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 0 1rem;
+}
+
+.home-services h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  color: #08003a;
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.home-service-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.home-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.home-service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #08003a;
+}
+
+.home-service-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* WHY CHOOSE US SECTION */
+.home-why-us {
+  max-width: 900px;
+  margin: 0 auto 5rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.home-why-us h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #08003a;
+}
+
+.home-why-us ul {
+  list-style: disc inside;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.home-why-us li {
+  margin-bottom: 1rem;
+}
+
+/* CTA BUTTON */
+.page-cta button {
+  font-size: 1.1rem;
+  padding: 0.75rem 2.5rem;
+  background-color: #ffb800;
+  color: #08003a;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.page-cta button:hover {
+  background-color: #ffa500;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .home-intro h2 {
+    font-size: 2.25rem;
+  }
+  .home-services h2,
+  .home-why-us h2 {
+    font-size: 1.75rem;
+  }
+  .home-service-card h3 {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-intro h2 {
+    font-size: 2rem;
+  }
+  .home-intro p {
+    font-size: 1.15rem;
+  }
+  .home-services-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-why-us ul {
+    text-align: center;
+    padding: 0;
+  }
+  .home-why-us li {
+    margin-bottom: 0.8rem;
+  }
+  .page-cta button {
+    width: 80%;
+  }
+}

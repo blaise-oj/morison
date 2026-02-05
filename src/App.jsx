@@ -1,115 +1,44 @@
-// App.jsx
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
+// src/App.jsx
+import { Routes, Route, Navigate } from "react-router-dom";
+import MainLayout from "./Layouts/MainLayout";
 
-// Import your pages
-import HomeInsurance from "./Pages/Home/HomeInsurance/HomeInsurance";
-// Later you can import ApartmentInsurance, CarInsurance, AccountantsInsurance, etc.
-import ApartmentInsurance from "./Pages/Home/ApartmentInsurance/ApartmentInsurance";
-import BundledHomeAutoInsurance from "./Pages/Home/BundledHomeAutoInsurance/BundledHomeAutoInsurance";
-import CondoInsurance from "./Pages/Home/CondoInsurance/CondoInsurance";
-import ContentsInsuranceCoverage from "./Pages/Home/ContentsInsuranceCoverage/ContentsInsuranceCoverage";
-import TownhouseInsurance from "./Pages/Home/TownhouseInsurance/TownhouseInsurance";
-import TenantsInsurance from "./Pages/Home/TenantsInsurance/TenantsInsurance";
+import { HomeRoutes } from "./Routes/HomeRoutes";
+import { AutoRoutes } from "./Routes/AutoRoutes";
+import { BusinessRoutes } from "./Routes/BusinessRoutes";
+import { HighValueRoutes } from "./Routes/HighValueRoutes";
+import { OtherRoutes } from "./Routes/OtherRoutes";
+import { RecreationRoutes } from "./Routes/RecreationRoutes";
 
-
-// Generic placeholder for pages not ready yet
 const Placeholder = ({ title }) => (
   <div style={{ padding: "120px 40px" }}>
     <h1>{title}</h1>
-    <p>Sorry the page is under maintainance</p>
+    <p>Sorry, this page is under maintenance.</p>
   </div>
 );
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Navbar />
+    <Routes>
+      <Route element={<MainLayout />}>
+        {/* Redirect root to home */}
+        <Route path="/" element={<Navigate to="/home" replace />} />
 
-      <Routes>
-        {/* HOME */}
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <Placeholder title="Home" />
-            </>
-          }
-        />
-        <Route
-          path="/home/home-insurance"
-          element={<HomeInsurance />}
-        />
-        <Route
-        path="/home/apartment-insurance"
-        element={<ApartmentInsurance />}
-        />
-        <Route
-        path="/home/bundled-home-auto-insurance"
-        element={<BundledHomeAutoInsurance />}
-        />
-        <Route
-          path="/home/condo-insurance"
-          element={<CondoInsurance/>}
-        />
-        <Route
-          path="/home/contents-insurance-coverage"
-          element={<ContentsInsuranceCoverage />}
-        />
-        <Route
-          path="/home/townhouse-insurance"
-          element={<TownhouseInsurance />}
-        />
-        <Route
-          path="/home/tenants-insurance"
-          element={<TenantsInsurance />}
-        />
-        <Route
-          path="/home/second-home-insurance"
-          element={<Placeholder title="Second Home Insurance" />}
-        />
+        {/* Home & Auto */}
+        {HomeRoutes}
+        {AutoRoutes}
+        {/* High Value Assets */}
+        {HighValueRoutes}
+        {BusinessRoutes}
+        {OtherRoutes}
+        {RecreationRoutes}
 
-        {/* AUTO */}
-        <Route
-          path="/auto/car-insurance"
-          element={<Placeholder title="Car Insurance" />}
-        />
-        <Route
-          path="/auto/hybrid-car-insurance"
-          element={<Placeholder title="Hybrid Car Insurance" />}
-        />
 
-        {/* BUSINESS */}
-        <Route
-          path="/business/accountants"
-          element={<Placeholder title="Accountants Insurance" />}
-        />
-        <Route
-          path="/business/arborists"
-          element={<Placeholder title="Arborists Insurance" />}
-        />
+         {/* Catch-all */}
+        <Route path="*" element={<Placeholder title="Page Not Found" />} />
 
-        {/* OTHER */}
-        <Route
-          path="/other/life-insurance"
-          element={<Placeholder title="Life Insurance" />}
-        />
-        <Route
-          path="/other/disability-insurance"
-          element={<Placeholder title="Disability & Critical Illness Insurance" />}
-        />
-
-        {/* 404 - catch all */}
-        <Route
-          path="*"
-          element={<Placeholder title="Page Not Found" />}
-        />
-      </Routes>
-    </>
+      </Route>
+    </Routes>
   );
-};
+}
 
 export default App;

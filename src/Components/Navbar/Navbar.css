@@ -35,7 +35,16 @@
 }
 
 /* ===============================
-   NAV LINKS
+   MENU ICON
+================================ */
+.menu-icon {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* ===============================
+   DESKTOP NAV LINKS
 ================================ */
 .nav-links {
   display: flex;
@@ -47,7 +56,6 @@
   list-style: none;
 }
 
-/* Top-level links */
 .nav-link,
 .nav-links a {
   color: #1f3a5f;
@@ -59,7 +67,7 @@
   transition: color 0.3s ease;
 }
 
-/* Underline animation */
+/* underline animation */
 .nav-link::after,
 .nav-links a::after {
   content: "";
@@ -83,18 +91,16 @@
 }
 
 /* ===============================
-   MEGA DROPDOWN
+   MEGA DROPDOWN (DESKTOP ONLY)
 ================================ */
 .mega-dropdown {
   position: relative;
 }
 
-/* Mega menu panel */
 .mega-menu {
   position: absolute;
   top: 110%;
-  right: 0;            /* 🔑 anchor to the right */
-  left: auto;          /* 🔑 disable left positioning */
+  right: 0;
   width: 960px;
   padding: 34px 40px;
   background: linear-gradient(180deg, #ffffff 0%, #f7faf5 100%);
@@ -110,8 +116,6 @@
   z-index: 999;
 }
 
-
-/* Show on hover */
 .mega-dropdown:hover .mega-menu {
   opacity: 1;
   visibility: visible;
@@ -125,7 +129,6 @@
   position: relative;
 }
 
-/* Column title */
 .mega-column h4 {
   font-size: 14px;
   font-weight: 800;
@@ -135,7 +138,6 @@
   margin-bottom: 18px;
 }
 
-/* Column links */
 .mega-column a {
   display: block;
   padding: 7px 0;
@@ -145,13 +147,11 @@
   transition: color 0.25s ease, transform 0.25s ease;
 }
 
-/* Hover effect */
 .mega-column a:hover {
   color: #6e9b2f;
   transform: translateX(6px);
 }
 
-/* Subtle divider between columns */
 .mega-column::after {
   content: "";
   position: absolute;
@@ -167,35 +167,196 @@
 }
 
 /* ===============================
-   SMOOTH ENTRY FEEL
+   RESPONSIVE BREAKPOINTS
 ================================ */
-.mega-menu {
-  animation: fadeInUp 0.4s ease forwards;
+@media (max-width: 1200px) {
+  .mega-menu {
+    width: 100%;
+    right: 0;
+  }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+@media (max-width: 992px) {
+  .menu-icon {
+    display: block;
   }
-  to {
+
+  .nav-links {
+    display: none;
+  }
+}
+/* ===============================
+   MOBILE MENU
+================================ */
+.mobile-menu {
+  position: fixed;
+  top: 82px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 82px);
+  background: #ffffff;
+  overflow-y: auto;
+  z-index: 999;
+  padding: 20px;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Individual sections */
+.mobile-section {
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+/* Main clickable title link + accordion toggle */
+.mobile-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main page link at top of dropdown */
+.mobile-main-link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f3a5f;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.mobile-main-link:hover {
+  color: #6e9b2f;
+}
+
+/* Accordion toggle button */
+.mobile-toggle-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #6e9b2f;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.25s ease;
+}
+
+.mobile-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile links container for three columns */
+.mobile-links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  padding: 15px 0;
+  animation: slideDown 0.3s ease forwards;
+}
+
+/* Three columns on wider screens */
+@media (min-width: 768px) {
+  .mobile-links.three-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.mobile-col h4 {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #6e9b2f;
+  margin-bottom: 10px;
+}
+
+.mobile-col a {
+  display: block;
+  font-size: 14.5px;
+  color: #1f3a5f;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: all 0.25s ease;
+}
+
+.mobile-col a:hover {
+  color: #6e9b2f;
+  transform: translateX(4px);
+}
+
+/* Accordion animation */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* ===============================
-   RESPONSIVE (DESKTOP FIRST)
-================================ */
-@media (max-width: 1200px) {
-  .mega-menu {
-    width: 100%;
-    left: -100px;
-  }
+/* CTA button at bottom */
+.mobile-cta {
+  display: block;
+  text-align: center;
+  background: #6e9b2f;
+  color: #fff;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: background 0.25s ease;
 }
 
-@media (max-width: 992px) {
-  .nav-links {
-    display: none;
-  }
+.mobile-cta:hover {
+  background: #5a7b24;
 }
+
+/* Scrollbar style */
+.mobile-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mobile-menu::-webkit-scrollbar-thumb {
+  background: rgba(110, 155, 47, 0.6);
+  border-radius: 4px;
+}
+
+.mobile-menu::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+/* Triangle indicator for mobile section */
+.mobile-section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f3a5f;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  transition: color 0.25s ease;
+  position: relative;
+}
+
+.mobile-section-title:hover {
+  color: #6e9b2f;
+}
+
+/* Triangle using ::after pseudo-element */
+.mobile-section-title::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #6e9b2f;
+  transition: transform 0.25s ease;
+  margin-left: 10px;
+}
+
+/* Rotate triangle when section is open */
+.mobile-section.open .mobile-section-title::after {
+  transform: rotate(90deg);
+}
+
