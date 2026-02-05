@@ -5,8 +5,7 @@ import { Route } from "react-router-dom";
 import Auto from "../Pages/Auto/Auto";
 
 // Subpages
-import HybridCarInsurance from "../Pages/Auto/HybridCarInsurance/HybridCarInsurance";
-import LuxuryCarInsurance from "../Pages/Auto/LuxuryCarInsurance/LuxuryCarInsurance";
+
 import TeslaInsurance from "../Pages/Auto/TeslaInsurance/TeslaInsurance";
 
 // Placeholder for subpages you haven’t built yet
@@ -24,8 +23,7 @@ export const AutoRoutes = (
     <Route path="/auto" element={<Auto />} />
 
     {/* SUBPAGES */}
-    <Route path="/auto/hybrid-car-insurance" element={<HybridCarInsurance />} />
-    <Route path="/auto/luxury-car-insurance" element={<LuxuryCarInsurance />} />
+    
 
     {/* Placeholder for pages not ready yet */}
     <Route path="/auto/tesla-insurance" element={<Placeholder title="Tesla Insurance" />} />
