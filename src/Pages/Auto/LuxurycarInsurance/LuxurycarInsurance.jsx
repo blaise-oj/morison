@@ -1,6 +1,6 @@
 import React from "react";
 import PageLayout from "../../Shared/PageLayout/PageLayout";
-import heroImg from "../../../assets/carap.jpg"; // update image if needed
+
 import "./LuxuryCarInsurance.css"
 
 const LuxuryCarInsurance = () => {
@@ -8,7 +8,7 @@ const LuxuryCarInsurance = () => {
     <PageLayout
       title="Luxury Car Insurance"
       subtitle="Premium protection for high-value and performance vehicles — tailored to how you drive."
-      image={heroImg}
+      
     >
       {/* INTRO */}
       <section>
