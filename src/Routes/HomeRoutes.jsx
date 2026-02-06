@@ -11,7 +11,7 @@ import BundledHomeAutoInsurance from "../Pages/Home/BundledHomeAutoInsurance/Bun
 import CondoInsurance from "../Pages/Home/CondoInsurance/CondoInsurance";
 import TownhouseInsurance from "../Pages/Home/TownhouseInsurance/TownhouseInsurance";
 import TenantsInsurance from "../Pages/Home/TenantsInsurance/TenantsInsurance";
-
+import SecondHomeInsurance from "../Pages/Home/SecondHomeInsurance/SecondHomeInsurance";
 import HighValueHomeInsurance from "../Pages/Home/HighValueHomeInsurance/HighValueHomeInsurance";
 import StudentRentalInsurance from "../Pages/Home/StudentRentalInsurance/StudentRentalInsurance";
 import RentedCondoInsurance from "../Pages/Home/RentedCondoInsurance/RentedCondoInsurance";
@@ -36,6 +36,7 @@ export const HomeRoutes = (
     <Route path="/home/condo-insurance" element={<CondoInsurance />} />
     <Route path="/home/townhouse-insurance" element={<TownhouseInsurance />} />
     <Route path="/home/tenants-insurance" element={<TenantsInsurance />} />
+    <Route path="/home/second-home-insurance" element={<SecondHomeInsurance />} />
     <Route path="/home/high-value-home-insurance" element={<HighValueHomeInsurance />} />
     <Route path="/home/student-rental-insurance" element={<StudentRentalInsurance />} />
     <Route path="/home/rented-condo-insurance" element={<RentedCondoInsurance />} />
