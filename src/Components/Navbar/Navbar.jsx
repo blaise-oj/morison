@@ -61,7 +61,7 @@ const Navbar = () => {
               <Link to="/home/home-equipment-breakdown">Home Equipment Breakdown</Link>
               <Link to="/home/outbuilding-insurance">Outbuilding Insurance</Link>
               <Link to="/home/garden-insurance">Garden Insurance</Link>
-              <Link to="/home/photography-equipment">Photography Equipment</Link>
+              <Link to="/home/photography-equipment-insurance">Photography Equipment</Link>
               <Link to="/home/home-daycare-insurance">Home Daycare Insurance</Link>
               <Link to="/home/discounts">Discounts</Link>
             </div>

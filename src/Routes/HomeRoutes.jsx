@@ -22,6 +22,11 @@ import GardenInsurance from "../Pages/Home/GardenInsurance/GardenInsurance";
 import ChaletInsurance from "../Pages/Home/ChaletInsurance/ChaletInsurance";
 import CottageInsurance from "../Pages/Home/CottageInsurance/CottageInsurance";
 import PersonalLiabilityInsurance from "../Pages/Home/PersonalLiabilityInsurance/PersonalLiabilityInsurance";
+import HomeEquipmentBreakdown from "../Pages/Home/HomeEquipmentBreakdown/HomeEquipmentBreakdown";
+import OutbuildingInsurance from "../Pages/Home/OutbuildingInsurance/OutbuildingInsurance";
+import PhotographyEquipmentInsurance from "../Pages/Home/PhotographyEquipmentInsurance/PhotographyEquipmentInsurance";
+import HomeDaycareInsurance from "../Pages/Home/HomeDaycareInsurance/HomedaycareInsurance";
+import Discounts from "../Pages/Home/Discounts/Discounts";
 
 
 export const HomeRoutes = (
@@ -47,6 +52,11 @@ export const HomeRoutes = (
     <Route path="/home/chalet-insurance" element={<ChaletInsurance />} />
     <Route path="/home/cottage-insurance" element={<CottageInsurance />} />
     <Route path="/home/personal-liability-insurance" element={<PersonalLiabilityInsurance />} />
+    <Route path="/home/home-equipment-breakdown" element={<HomeEquipmentBreakdown />} />
+    <Route path="/home/outbuilding-insurance" element={<OutbuildingInsurance />} />
+    <Route path="/home/photography-equipment-insurance" element={<PhotographyEquipmentInsurance />} />
+    <Route path="/home/home-daycare-insurance" element={<HomeDaycareInsurance />} />
+    <Route path="/home/discounts" element={<Discounts />} />
     
   </>
 );
