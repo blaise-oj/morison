@@ -25,7 +25,7 @@ import PersonalLiabilityInsurance from "../Pages/Home/PersonalLiabilityInsurance
 import HomeEquipmentBreakdown from "../Pages/Home/HomeEquipmentBreakdown/HomeEquipmentBreakdown";
 import OutbuildingInsurance from "../Pages/Home/OutbuildingInsurance/OutbuildingInsurance";
 import PhotographyEquipmentInsurance from "../Pages/Home/PhotographyEquipmentInsurance/PhotographyEquipmentInsurance";
-import HomeDaycareInsurance from "../Pages/Home/HomeDaycareInsurance/HomedaycareInsurance";
+import HomeDaycareInsurance from "../Pages/Home/HomeDaycareInsurance/HomeDaycareInsurance";
 import Discounts from "../Pages/Home/Discounts/Discounts";
 
 
