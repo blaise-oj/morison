@@ -15,7 +15,7 @@ import Discounts from "../Pages/Auto/Discounts/Discounts";
 import ElectricCarInsurance from "../Pages/Auto/ElectricCarInsurance/ElectricCarInsurance";
 import HybridCarInsurance from "../Pages/Auto/HybridCarInsurance/HybridCarInsurance";
 import LuxuryCarInsurance from "../Pages/Auto/LuxuryCarInsurance/LuxuryCarInsurance";
-import SportsCarInsurance from "../Pages/Auto/SportsCarInsurance/SportscarInsurance";
+import SportsCarInsurance from "../Pages/Auto/SportsCarInsurance/SportsCarInsurance";
 import ClassicCarInsurance from "../Pages/Auto/ClassicCarInsurance/ClassicCarInsurance";
 import MotorcycleInsurance from "../Pages/Auto/MotorcycleInsurance/MotorcycleInsurance";
 import PickupTruckInsurance from "../Pages/Auto/PickupTruckInsurance/PickupTruckInsurance";
