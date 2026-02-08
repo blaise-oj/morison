@@ -8,7 +8,7 @@ import HighValue from "../Pages/HighValue/HighValue";
 import HighValueHomeInsurance from "../Pages/HighValue/HighValueHomeInsurance/HighValueHomeInsurance";
 import PenthouseInsurance from "../Pages/HighValue/PenthouseInsurance/PenthouseInsurance";
 import YachtInsurance from "../Pages/HighValue/YachtInsurance/YachtInsurance";
-import LuxuryCarInsurance from "../Pages/HighValue/LuxuryCarInsurance/LuxurycarInsurance";
+import LuxuryCarInsurance from "../Pages/HighValue/LuxuryCarInsurance/LuxuryCarInsurance";
 import AudiInsurance from "../Pages/HighValue/AudiInsurance/AudiInsurance";
 import BentleyInsurance from "../Pages/HighValue/BentleyInsurance/BentleyInsurance";
 import LandRoverInsurance from "../Pages/HighValue/LandRoverInsurance/LandRoverInsurance";
@@ -17,7 +17,7 @@ import MercedesInsurance from "../Pages/HighValue/MercedesInsurance/MercedesInsu
 import PorscheInsurance from "../Pages/HighValue/PorscheInsurance/PorscheInsurance";
 import TeslaInsurance from "../Pages/HighValue/TeslaInsurance/TeslaInsurance";
 import JewelleryInsurance from "../Pages/HighValue/JewelleryInsurance/JewelleryInsurance";
-import EngagementRingInsurance from "../Pages/HighValue/EngagementRingInsurance/EngagementringInsurance";
+import EngagementRingInsurance from "../Pages/HighValue/EngagementRingInsurance/EngagementrRingInsurance";
 import WatchInsurance from "../Pages/HighValue/WatchInsurance/WatchInsurance";
 import FineArtInsurance from "../Pages/HighValue/FineArtInsurance/FineaArtInsurance";
 import MusicalInstrumentInsurance from "../Pages/HighValue/MusicalInstrumentInsurance/MusicalInstrumentInsurance";
