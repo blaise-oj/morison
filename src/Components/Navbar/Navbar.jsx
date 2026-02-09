@@ -264,7 +264,7 @@ const Navbar = () => {
               <h4>Additional Coverage</h4>
               <Link to="/business/business-interruption-coverage">Business Interruption Coverage</Link>
               <Link to="/business/commercial-cyber-coverage">Commercial Cyber Coverage</Link>
-              <Link to="/business/commercial-umbrella-excess-liability">Commercial Umbrella/Excess Liability Coverage</Link>
+              <Link to="/business/commercial-umbrella-insurance">Commercial Umbrella/Excess Liability Coverage</Link>
             </div>
           </div>
         </li>
