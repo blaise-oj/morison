@@ -6,7 +6,7 @@ import AdditionalLivingExpenses from "../Pages/Other/AdditionalLivingExpenses/Ad
 import ContentsInsurance from "../Pages/Other/ContentsInsurance/ContentsInsurance";
 import CyberCoverage from "../Pages/Other/CyberCoverage/CyberCoverage"; 
 import EngagementRingInsurance from "../Pages/Other/EngagementRingInsurance/EngagementRingInsurance";
-import HomeBasedBusinessCoverage from "../Pages/Other/HomeBasedBusinessCoverage/HomebasedBusinessCoverage";
+import HomeBasedBusinessCoverage from "../Pages/Other/HomeBasedBusinessCoverage/HomeBasedBusinessCoverage";
 import IdentityTheftCoverage from "../Pages/Other/IdentityTheftCoverage/IdentityTheftCoverage";
 import JewelleryCoverage from "../Pages/Other/JewelleryCoverage/JewelleryCoverage";
 import OutbuildingInsurance from "../Pages/Other/OutbuildingInsurance/OutbuildingInsurance";
