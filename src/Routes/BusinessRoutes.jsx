@@ -31,7 +31,7 @@ import DirectorsOfficersInsurance from "../Pages/Business/DirectorsOfficersInsur
 import EnvironmentalPollutionLiability from "../Pages/Business/EnvironmentalPollutionLiability/EnvironmentalPollutionLiability";
 import EquipmentBreakdownInsurance from "../Pages/Business/EquipmentBreakdownInsurance/EquipmentBreakdownInsurance";
 import ErrorsOmissionsInsurance from "../Pages/Business/ErrorsOmissionsInsurance/ErrorsOmissionsInsurance";
-import HomeBasedBusinessInsurance from "../Pages/Business/HomebasedbusinessInsurance/HomeBasedBusinessInsurance";
+import HomeBasedBusinessInsurance from "../Pages/Business/HomeBasedBusinessInsurance/HomeBasedBusinessInsurance";
 import LegalExpenseInsurance from "../Pages/Business/LegalExpenseInsurance/LegalExpenseInsurance";
 import ProductLiabilityInsurance from "../Pages/Business/ProductLiabilityInsurance/ProductLiabilityInsurance";
 import ProfessionalLiabilityInsurance from "../Pages/Business/ProfessionalLiabilityInsurance/ProfessionalLiabilityInsurance";
