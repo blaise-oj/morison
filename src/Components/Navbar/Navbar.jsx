@@ -287,18 +287,12 @@ const Navbar = () => {
               <Link to="/other/outbuilding-insurance">Outbuilding Insurance Coverage</Link>
               <Link to="/other/overland-water-coverage">Overland Water Coverage</Link>
               <Link to="/other/rental-car-insurance">Rental Car Insurance</Link>
-              <Link to="/other/umbrella-coverage">Umbrella Coverage</Link>
-              <Link to="/other/watch-insurance">Watch Insurance</Link>
-              <Link to="/other/water-damage-coverage">Water Damage Coverage</Link>
-              <Link to="/other/wine-cellar-insurance">Wine Cellar Insurance</Link>
+              
+              
+          
             </div>
 
-            <div className="mega-column">
-              <h4>Group Insurance</h4>
-              <Link to="/other/grand-erie-district-school-board">Grand Erie District School Board</Link>
-              <Link to="/other/haldimand-county">Haldimand County Group Insurance</Link>
-              <Link to="/other/norfolk-county">Norfolk County</Link>
-            </div>
+            
 
             <div className="mega-column">
               <h4>Special Events</h4>
@@ -320,9 +314,9 @@ const Navbar = () => {
               <Link to="/other/our-values">Our Values</Link>
               <Link to="/other/our-community-partners">Our Community Partners</Link>
               <Link to="/other/our-insurance-partners">Our Insurance Partners</Link>
-              <Link to="/other/our-insurance-extras">Our Insurance Extras</Link>
+              
               <Link to="/other/why-choose-morison">Why Choose Morison Insurance</Link>
-              <Link to="/other/hole-in-one-insurance">Hole-In-One Insurance</Link>
+              
             </div>
           </div>
         </li>
@@ -667,15 +661,7 @@ const Navbar = () => {
         <Link to="/other/outbuilding-insurance" onClick={() => setMobileMenu(false)}>Outbuilding Insurance Coverage</Link>
         <Link to="/other/overland-water-coverage" onClick={() => setMobileMenu(false)}>Overland Water Coverage</Link>
         <Link to="/other/rental-car-insurance" onClick={() => setMobileMenu(false)}>Rental Car Insurance</Link>
-        <Link to="/other/umbrella-coverage" onClick={() => setMobileMenu(false)}>Umbrella Coverage</Link>
-        <Link to="/other/watch-insurance" onClick={() => setMobileMenu(false)}>Watch Insurance</Link>
-        <Link to="/other/water-damage-coverage" onClick={() => setMobileMenu(false)}>Water Damage Coverage</Link>
-        <Link to="/other/wine-cellar-insurance" onClick={() => setMobileMenu(false)}>Wine Cellar Insurance</Link>
-
-        <h4>Group Insurance</h4>
-        <Link to="/other/grand-erie-district-school-board" onClick={() => setMobileMenu(false)}>Grand Erie District School Board</Link>
-        <Link to="/other/haldimand-county" onClick={() => setMobileMenu(false)}>Haldimand County Group Insurance</Link>
-        <Link to="/other/norfolk-county" onClick={() => setMobileMenu(false)}>Norfolk County</Link>
+    
 
         <h4>Special Events</h4>
         <Link to="/other/party-alcohol-liability" onClick={() => setMobileMenu(false)}>Party Alcohol Liability Insurance</Link>
@@ -694,9 +680,8 @@ const Navbar = () => {
         <Link to="/other/our-values" onClick={() => setMobileMenu(false)}>Our Values</Link>
         <Link to="/other/our-community-partners" onClick={() => setMobileMenu(false)}>Our Community Partners</Link>
         <Link to="/other/our-insurance-partners" onClick={() => setMobileMenu(false)}>Our Insurance Partners</Link>
-        <Link to="/other/our-insurance-extras" onClick={() => setMobileMenu(false)}>Our Insurance Extras</Link>
         <Link to="/other/why-choose-morison" onClick={() => setMobileMenu(false)}>Why Choose Morison Insurance</Link>
-        <Link to="/other/hole-in-one-insurance" onClick={() => setMobileMenu(false)}>Hole-In-One Insurance</Link>
+        
       </div>
     </div>
   )}

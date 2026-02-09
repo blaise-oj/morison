@@ -2,6 +2,27 @@ import { Route } from "react-router-dom";
 
 // Main Other page
 import Other from "../Pages/Other/Other";
+import AdditionalLivingExpenses from "../Pages/Other/AdditionalLivingExpenses/AdditionalLivingExpenses";
+import ContentsInsurance from "../Pages/Other/ContentsInsurance/ContentsInsurance";
+import CyberCoverage from "../Pages/Other/CyberCoverage/CyberCoverage"; 
+import EngagementRingInsurance from "../Pages/Other/EngagementRingInsurance/EngagementRingInsurance";
+import HomeBasedBusinessCoverage from "../Pages/Other/HomeBasedBusinessCoverage/HomebasedBusinessCoverage";
+import IdentityTheftCoverage from "../Pages/Other/IdentityTheftCoverage/IdentityTheftCoverage";
+import JewelleryCoverage from "../Pages/Other/JewelleryCoverage/JewelleryCoverage";
+import OutbuildingInsurance from "../Pages/Other/OutbuildingInsurance/OutbuildingInsurance";
+import OverlandWaterCoverage from "../Pages/Other/OverlandWaterCoverage/OverlandWaterCoverage";
+import RentalCarInsurance from "../Pages/Other/RentalCarInsurance/RentalCarInsurance";
+import LifeInsurance from "../Pages/Other/LifeInsurance/LifeInsurance";
+import DisabilityCriticalIllness from "../Pages/Other/DisabilityCriticalIllness/DisabilityCriticalIllness";
+import PartyAlcoholLiability from "../Pages/Other/PartyAlcoholLiability/PartyAlcoholLiability";
+import WeddingInsurance from "../Pages/Other/WeddingInsurance/WeddingInsurance";
+import AwardsRecognition from "../Pages/Other/AwardsRecognition/AwardsRecognition";
+import OurStory from "../Pages/Other/OurStory/OurStory";
+import OurTeam from "../Pages/Other/OurTeam/OurTeam";
+import OurValues from "../Pages/Other/OurValues/OurValues";
+import OurCommunityPartners from "../Pages/Other/OurCommunityPartners/OurCommunityPartners";
+import OurInsurancePartners from "../Pages/Other/OurInsurancePartners/OurInsurancePartners";
+import WhyChooseMorison from "../Pages/Other/WhyChooseMorison/WhyChooseMorison";
 
 // Subpages placeholders (you can replace these with actual pages later)
 const Placeholder = ({ title }) => (
@@ -15,52 +36,29 @@ export const OtherRoutes = (
   <>
     {/* MAIN OTHER PAGE */}
     <Route path="/other" element={<Other />} />
-    {/*
+    {/* SUBPAGES */}
+    <Route path="/other/additional-living-expenses" element={<AdditionalLivingExpenses />} />
+    <Route path="/other/contents-insurance" element={<ContentsInsurance />} />
+    <Route path="/other/cyber-coverage" element={<CyberCoverage />} />
+    <Route path="/other/engagement-ring-insurance" element={<EngagementRingInsurance />} />
+    <Route path="/other/home-based-business-coverage" element={<HomeBasedBusinessCoverage />} />
+    <Route path="/other/identity-theft-coverage" element={<IdentityTheftCoverage />} />
+    <Route path="/other/jewellery-coverage" element={<JewelleryCoverage />} />
+    <Route path="/other/outbuilding-insurance" element={<OutbuildingInsurance />} />
+    <Route path="/other/overland-water-coverage" element={<OverlandWaterCoverage />} />
+    <Route path="/other/rental-car-insurance" element={<RentalCarInsurance />} />
+    <Route path="/other/life-insurance" element={<LifeInsurance />} />
+    <Route path="/other/disability-critical-illness" element={<DisabilityCriticalIllness />} />
+    <Route path="/other/party-alcohol-liability" element={<PartyAlcoholLiability />} />
+    <Route path="/other/wedding-insurance" element={<WeddingInsurance />} />
+    <Route path="/other/awards-recognition" element={<AwardsRecognition />} />
+    <Route path="/other/our-story" element={<OurStory />} />
+    <Route path="/other/our-team" element={<OurTeam />} />
+    <Route path="/other/our-values" element={<OurValues />} />
+    <Route path="/other/our-community-partners" element={<OurCommunityPartners />} />
+    <Route path="/other/our-insurance-partners" element={<OurInsurancePartners />} />
+    <Route path="/other/why-choose-morison" element={<WhyChooseMorison />} />
 
-    {/* COVERAGE & INSURANCE TYPES 
-    <Route path="/other/additional-charges" element={<Placeholder title="Additional Charges" />} />
-    <Route path="/other/additional-living-expenses-coverage" element={<Placeholder title="Additional Living Expenses Coverage" />} />
-    <Route path="/other/contents-insurance-coverage" element={<Placeholder title="Contents Insurance Coverage" />} />
-    <Route path="/other/cyber-coverage" element={<Placeholder title="Cyber Coverage" />} />
-    <Route path="/other/engagement-ring-insurance" element={<Placeholder title="Engagement Ring Insurance" />} />
-    <Route path="/other/home-based-business-coverage" element={<Placeholder title="Home Based Business Coverage" />} />
-    <Route path="/other/identity-theft-coverage" element={<Placeholder title="Identity Theft Coverage" />} />
-    <Route path="/other/jewellery-coverage" element={<Placeholder title="Jewellery Coverage" />} />
-    <Route path="/other/outbuilding-insurance-coverage" element={<Placeholder title="Outbuilding Insurance Coverage" />} />
-    <Route path="/other/overland-water-coverage" element={<Placeholder title="Overland Water Coverage" />} />
-    <Route path="/other/rental-car-insurance" element={<Placeholder title="Rental Car Insurance" />} />
-    <Route path="/other/umbrella-coverage" element={<Placeholder title="Umbrella Coverage" />} />
-    <Route path="/other/watch-insurance" element={<Placeholder title="Watch Insurance" />} />
-    <Route path="/other/water-damage-coverage" element={<Placeholder title="Water Damage Coverage" />} />
-    <Route path="/other/wine-cellar-insurance" element={<Placeholder title="Wine Cellar Insurance" />} />
-
-    
-    <Route path="/other/group-insurance" element={<Placeholder title="Group Insurance" />} />
-    <Route path="/other/grand-erie-district-school-board" element={<Placeholder title="Grand Erie District School Board" />} />
-    <Route path="/other/haldimand-county-group-insurance" element={<Placeholder title="Haldimand County Group Insurance" />} />
-    <Route path="/other/norfolk-county" element={<Placeholder title="Norfolk County" />} />
-    <Route path="/other/special-events" element={<Placeholder title="Special Events" />} />
-    <Route path="/other/party-alcohol-liability-insurance" element={<Placeholder title="Party Alcohol Liability Insurance" />} />
-    <Route path="/other/wedding-insurance" element={<Placeholder title="Wedding Insurance" />} />
-
-    
-    <Route path="/other/life-insurance" element={<Placeholder title="Life Insurance" />} />
-    <Route path="/other/disability-critical-illness-insurance" element={<Placeholder title="Disability & Critical Illness Insurance" />} />
-
-    
-    <Route path="/other/why-us" element={<Placeholder title="Why Us" />} />
-    <Route path="/other/awards-recognition" element={<Placeholder title="Awards & Recognition" />} />
-    <Route path="/other/our-story" element={<Placeholder title="Our Story" />} />
-    <Route path="/other/our-team" element={<Placeholder title="Our Team" />} />
-    <Route path="/other/our-values" element={<Placeholder title="Our Values" />} />
-    <Route path="/other/our-community-partners" element={<Placeholder title="Our Community Partners" />} />
-    <Route path="/other/our-insurance-partners" element={<Placeholder title="Our Insurance Partners" />} />
-    <Route path="/other/our-insurance-extras" element={<Placeholder title="Our Insurance Extras" />} />
-    <Route path="/other/why-choose-morison-insurance" element={<Placeholder title="Why Choose Morison Insurance" />} />
-
-    
-    <Route path="/other/hole-in-one-insurance" element={<Placeholder title="Hole-In-One Insurance" />} />
-    */}
   </>
   
 );
