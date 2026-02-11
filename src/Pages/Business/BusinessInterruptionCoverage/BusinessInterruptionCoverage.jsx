@@ -5,10 +5,11 @@ import "./BusinessInterruptionCoverage.css";
 
 const BusinessInterruptionCoverage = () => {
   return (
+    <div className="business-interruption-coverage-page">
     <PageLayout
       title="Business Interruption Insurance"
       subtitle="Protect your business from financial losses due to unexpected disruptions."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const BusinessInterruptionCoverage = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./ProductLiabilityInsurance.css";
 
 const ProductLiabilityInsurance = () => {
   return (
+    <div className="product-liability-insurance-page">
     <PageLayout
       title="Product Liability Insurance"
       subtitle="Protect your business from claims arising from defective products, property damage, or injuries caused by your products."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -104,6 +105,7 @@ const ProductLiabilityInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

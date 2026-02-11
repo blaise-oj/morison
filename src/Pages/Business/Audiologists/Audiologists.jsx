@@ -5,10 +5,12 @@ import "./Audiologists.css";
 
 const Audiologists = () => {
   return (
+    <div className="audiologists-page">
+  
     <PageLayout
       title="Audiologists Insurance"
       subtitle="Comprehensive insurance coverage for audiologists and hearing care professionals."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +108,7 @@ const Audiologists = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

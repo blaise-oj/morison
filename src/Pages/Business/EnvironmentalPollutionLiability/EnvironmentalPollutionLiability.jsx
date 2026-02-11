@@ -5,10 +5,11 @@ import "./EnvironmentalPollutionLiability.css";
 
 const EnvironmentalPollutionLiability = () => {
   return (
+    <div className="environmental-pollution-liability-page">
     <PageLayout
       title="Environmental / Pollution Liability Insurance"
       subtitle="Protect your business from environmental risks, pollution claims, and regulatory liabilities."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const EnvironmentalPollutionLiability = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./PublicLiabilityInsurance.css";
 
 const PublicLiabilityInsurance = () => {
   return (
+    <div className="public-liability-insurance-page">
     <PageLayout
       title="Public Liability Insurance"
       subtitle="Protect your business against claims from third parties for injury or property damage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const PublicLiabilityInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

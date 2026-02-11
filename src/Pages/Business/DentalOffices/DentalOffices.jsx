@@ -5,10 +5,11 @@ import "./DentalOffices.css";
 
 const DentalOffices = () => {
   return (
+    <div className="dental-offices-page">
     <PageLayout
       title="Dental Offices Insurance"
       subtitle="Comprehensive insurance coverage for dental practices, clinics, and oral health professionals."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const DentalOffices = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

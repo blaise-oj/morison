@@ -6,10 +6,12 @@ import "./TravelTrailerInsurance.css";
 
 const TravelTrailerInsurance = () => {
   return (
+    <div className="travel-trailer-insurance-page">
+    
     <PageLayout
       title="Travel Trailer Insurance"
       subtitle="Reliable coverage for travel trailers, campers, and towable RVs."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +102,7 @@ const TravelTrailerInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

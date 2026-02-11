@@ -5,10 +5,11 @@ import "./BnB.css";
 
 const BnB = () => {
   return (
+    <div className="bnb-page">
     <PageLayout
       title="B&B Insurance"
       subtitle="Tailored insurance coverage for bed and breakfast owners and small hospitality businesses."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const BnB = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

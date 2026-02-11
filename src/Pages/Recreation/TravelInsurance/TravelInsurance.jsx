@@ -6,10 +6,11 @@ import "./TravelInsurance.css";
 
 const TravelInsurance = () => {
   return (
+    <div className="travel-insurance">
     <PageLayout
       title="Travel Insurance"
       subtitle="Comprehensive protection for trips, travel disruptions, and medical emergencies."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -102,6 +103,7 @@ const TravelInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

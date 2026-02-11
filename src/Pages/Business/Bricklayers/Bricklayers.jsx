@@ -5,10 +5,11 @@ import "./Bricklayers.css";
 
 const Bricklayers = () => {
   return (
+    <div className="bricklayers-page">
     <PageLayout
       title="Bricklayers Insurance"
       subtitle="Specialized insurance coverage for bricklayers, masons, and construction professionals."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const Bricklayers = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

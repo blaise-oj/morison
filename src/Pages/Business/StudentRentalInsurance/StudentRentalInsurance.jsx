@@ -5,10 +5,11 @@ import "./StudentRentalInsurance.css";
 
 const StudentRentalInsurance = () => {
   return (
+    <div className="student-rental-insurance-page">
     <PageLayout
       title="Student Rental Insurance"
       subtitle="Protect student rental properties and tenants from property damage, liability, and loss of belongings."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const StudentRentalInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

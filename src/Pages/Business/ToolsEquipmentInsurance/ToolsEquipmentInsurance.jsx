@@ -5,10 +5,11 @@ import "./ToolsEquipmentInsurance.css";
 
 const ToolsEquipmentInsurance = () => {
   return (
+    <div className="tools-equipment-insurance-page">
     <PageLayout
       title="Tools & Equipment Insurance"
       subtitle="Protect your business tools and equipment from damage, theft, or loss, ensuring uninterrupted operations."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -103,6 +104,7 @@ const ToolsEquipmentInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

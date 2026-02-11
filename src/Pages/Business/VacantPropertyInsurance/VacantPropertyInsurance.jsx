@@ -5,10 +5,11 @@ import "./VacantPropertyInsurance.css";
 
 const VacantPropertyInsurance = () => {
   return (
+    <div className="vacant-property-insurance-page">
     <PageLayout
       title="Vacant Property Insurance"
       subtitle="Protect unoccupied properties from damage, theft, and liability risks."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const VacantPropertyInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

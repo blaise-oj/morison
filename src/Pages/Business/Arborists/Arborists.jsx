@@ -5,10 +5,11 @@ import "./Arborists.css";
 
 const Arborists = () => {
   return (
+    <div className="arborists-page">
     <PageLayout
       title="Arborists Insurance"
       subtitle="Specialized insurance coverage designed for tree care and arborist professionals."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -107,6 +108,7 @@ const Arborists = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

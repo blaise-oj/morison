@@ -5,10 +5,11 @@ import "./DirectorsOfficersInsurance.css";
 
 const DirectorsOfficersInsurance = () => {
   return (
+    <div className="directors-officers-insurance-page">
     <PageLayout
       title="Directors & Officers Insurance"
       subtitle="Protect company leaders from personal financial loss due to management decisions and legal claims."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const DirectorsOfficersInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

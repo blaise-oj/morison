@@ -6,10 +6,11 @@ import "./SeadooInsurance.css";
 
 const SeadooInsurance = () => {
   return (
+    <div className="seadoo-insurance-page">
     <PageLayout
       title="Seadoo Insurance"
       subtitle="Specialized coverage for personal watercraft and jet skis."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const SeadooInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./CargoInsurance.css";
 
 const CargoInsurance = () => {
   return (
+    <div className="cargo-insurance-page">
     <PageLayout
       title="Cargo Insurance"
       subtitle="Comprehensive coverage for goods in transit, protecting your shipments and logistics operations."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const CargoInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

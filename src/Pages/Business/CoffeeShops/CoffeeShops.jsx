@@ -5,10 +5,11 @@ import "./CoffeeShops.css";
 
 const CoffeeShops = () => {
   return (
+    <div className="cofee-shops-page">
     <PageLayout
       title="Coffee Shops Insurance"
       subtitle="Comprehensive insurance coverage for coffee shops, cafés, and small food & beverage businesses."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -104,6 +105,7 @@ const CoffeeShops = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

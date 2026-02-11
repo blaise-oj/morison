@@ -6,10 +6,11 @@ import "./SnowboardEquipmentInsurance.css";
 
 const SnowboardEquipmentInsurance = () => {
   return (
+    <div className="snowboard-equipment-insurance-page">
     <PageLayout
       title="Snowboard Equipment Insurance"
       subtitle="Comprehensive protection for snowboards, boots, and winter sports gear."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const SnowboardEquipmentInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./CommercialUmbrellaInsurance.css";
 
 const CommercialUmbrellaInsurance = () => {
   return (
+    <div className="commercial-umbrella-insurance-page">
     <PageLayout
       title="Commercial Umbrella / Excess Liability Insurance"
       subtitle="Extend your liability coverage beyond standard policy limits for enhanced protection."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -104,6 +105,7 @@ const CommercialUmbrellaInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

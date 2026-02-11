@@ -5,10 +5,11 @@ import "./CommercialGeneralLiability.css";
 
 const CommercialGeneralLiability = () => {
   return (
+    <div className="commercial-general-liability-insurance-page">
     <PageLayout
       title="Commercial General Liability Insurance"
       subtitle="Protect your business from third-party claims of bodily injury, property damage, and legal liability."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -103,6 +104,7 @@ const CommercialGeneralLiability = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

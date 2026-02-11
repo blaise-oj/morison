@@ -5,10 +5,11 @@ import "./CommercialCyberCoverage.css";
 
 const CommercialCyberCoverage = () => {
   return (
+    <div className="commercial-cyber-coverage-page">
     <PageLayout
       title="Commercial Cyber Insurance"
       subtitle="Protect your business from cyber threats, data breaches, and online risks."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const CommercialCyberCoverage = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

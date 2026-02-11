@@ -5,10 +5,11 @@ import "./BarberShops.css";
 
 const BarberShops = () => {
   return (
+    <div className="barber-shops-page">
     <PageLayout
       title="Barber Shops Insurance"
       subtitle="Comprehensive insurance coverage tailored for barber shops and hair salons."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -104,6 +105,7 @@ const BarberShops = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

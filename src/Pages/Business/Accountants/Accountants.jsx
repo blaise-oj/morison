@@ -5,10 +5,11 @@ import "./Accountants.css";
 
 const Accountants = () => {
   return (
+    <div className="accountants-page">
     <PageLayout
       title="Accountants Insurance"
       subtitle="Professional insurance solutions designed to protect accountants and accounting firms."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -107,6 +108,7 @@ const Accountants = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

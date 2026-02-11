@@ -6,10 +6,11 @@ import "./RVInsurance.css";
 
 const RVInsurance = () => {
   return (
+    <div className="rv-insurance-page">
     <PageLayout
       title="RV Insurance"
       subtitle="Comprehensive protection for motorhomes, campers, and recreational vehicles."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const RVInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

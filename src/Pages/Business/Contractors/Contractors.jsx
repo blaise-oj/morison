@@ -5,10 +5,11 @@ import "./Contractors.css";
 
 const Contractors = () => {
   return (
+    <div className="contractors-page">
     <PageLayout
       title="Contractors Insurance"
       subtitle="Comprehensive insurance coverage for contractors, builders, and construction service providers."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const Contractors = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

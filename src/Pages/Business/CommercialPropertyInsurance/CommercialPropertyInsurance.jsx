@@ -5,10 +5,11 @@ import "./CommercialPropertyInsurance.css";
 
 const CommercialPropertyInsurance = () => {
   return (
+    <div className="commercial-property-insurance-page">
     <PageLayout
       title="Commercial Property Insurance"
       subtitle="Protect your business property, equipment, and assets against damage, theft, and natural disasters."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -103,6 +104,7 @@ const CommercialPropertyInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

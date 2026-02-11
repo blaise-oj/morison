@@ -5,10 +5,11 @@ import "./LegalExpenseInsurance.css";
 
 const LegalExpenseInsurance = () => {
   return (
+    <div className="legal-expense-insurance">
     <PageLayout
       title="Legal Expense Insurance"
       subtitle="Cover your business against legal costs arising from disputes, claims, and regulatory actions."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -104,6 +105,7 @@ const LegalExpenseInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./Bakeries.css";
 
 const Bakeries = () => {
   return (
+    <div className="bakeries-page">
     <PageLayout
       title="Bakeries Insurance"
       subtitle="Comprehensive insurance coverage for bakeries, patisseries, and small food businesses."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const Bakeries = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

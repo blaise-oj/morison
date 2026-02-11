@@ -5,10 +5,11 @@ import "./RentedDwellingInsurance.css";
 
 const RentedDwellingInsurance = () => {
   return (
+    <div className="rented-dwelling-insurance-page">
     <PageLayout
       title="Rented Dwelling Insurance"
       subtitle="Protect your rental properties from damage, liability, and loss of rental income."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const RentedDwellingInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./ProfessionalLiabilityInsurance.css";
 
 const ProfessionalLiabilityInsurance = () => {
   return (
+    <div className="professional-liability-insurance-page">
     <PageLayout
       title="Professional Liability Insurance"
       subtitle="Protect your business and professionals from claims of negligence, errors, or inadequate services."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -104,6 +105,7 @@ const ProfessionalLiabilityInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

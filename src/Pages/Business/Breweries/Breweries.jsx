@@ -5,10 +5,11 @@ import "./Breweries.css";
 
 const Breweries = () => {
   return (
+    <div className="breweries-page">
     <PageLayout
       title="Breweries Insurance"
       subtitle="Comprehensive insurance coverage for breweries, microbreweries, and craft beer businesses."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const Breweries = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

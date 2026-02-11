@@ -5,10 +5,11 @@ import "./DogDaycares.css";
 
 const DogDaycares = () => {
   return (
+    <div className="dog-daycares-page">
     <PageLayout
       title="Dog Daycares Insurance"
       subtitle="Specialized insurance coverage for dog daycares, pet care facilities, and canine services."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -104,6 +105,7 @@ const DogDaycares = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./DoctorsOffices.css";
 
 const DoctorsOffices = () => {
   return (
+    <div className="doctors-offices-page">
     <PageLayout
       title="Doctors' Offices Insurance"
       subtitle="Comprehensive insurance coverage for medical practices, clinics, and healthcare professionals."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const DoctorsOffices = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

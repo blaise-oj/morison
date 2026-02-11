@@ -5,10 +5,11 @@ import "./CleaningProfessionals.css";
 
 const CleaningProfessionals = () => {
   return (
+    <div className="cleaning-professionals-page">
     <PageLayout
       title="Cleaning Professionals Insurance"
       subtitle="Tailored insurance coverage for cleaning services, janitorial businesses, and housekeeping professionals."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const CleaningProfessionals = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

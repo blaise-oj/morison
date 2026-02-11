@@ -6,10 +6,11 @@ import "./SkiEquipmentInsurance.css";
 
 const SkiEquipmentInsurance = () => {
   return (
+    <div className="ski-equipment-insurance-page">
     <PageLayout
       title="Ski Equipment Insurance"
       subtitle="Specialized coverage for skis, snowboards, and winter sports equipment."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const SkiEquipmentInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

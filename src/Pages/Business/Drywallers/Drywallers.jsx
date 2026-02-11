@@ -5,10 +5,11 @@ import "./Drywallers.css";
 
 const Drywallers = () => {
   return (
+    <div className="drywallers-page">
     <PageLayout
       title="Drywallers Insurance"
       subtitle="Comprehensive insurance coverage for drywall installers, contractors, and plastering professionals."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const Drywallers = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

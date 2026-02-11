@@ -5,10 +5,11 @@ import "./Electricians.css";
 
 const Electricians = () => {
   return (
+    <div className="electricians-page">
     <PageLayout
       title="Electricians Insurance"
       subtitle="Comprehensive insurance coverage for electricians, electrical contractors, and electrical service providers."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const Electricians = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

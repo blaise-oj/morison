@@ -5,10 +5,11 @@ import "./Chiropractors.css";
 
 const Chiropractors = () => {
   return (
+    <div className="chiropractors-page">
     <PageLayout
       title="Chiropractors Insurance"
       subtitle="Comprehensive insurance coverage for chiropractors and spinal care professionals."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const Chiropractors = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

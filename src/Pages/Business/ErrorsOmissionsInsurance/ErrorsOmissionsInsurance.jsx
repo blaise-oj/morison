@@ -5,10 +5,11 @@ import "./ErrorsOmissionsInsurance.css";
 
 const ErrorsOmissionsInsurance = () => {
   return (
+    <div className="errors-ommissions-insurance-page">
     <PageLayout
       title="Errors & Omissions Insurance"
       subtitle="Protect your business against claims of professional negligence, mistakes, or inadequate work."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -104,6 +105,7 @@ const ErrorsOmissionsInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

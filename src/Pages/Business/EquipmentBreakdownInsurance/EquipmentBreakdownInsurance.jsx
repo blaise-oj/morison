@@ -5,10 +5,11 @@ import "./EquipmentBreakdownInsurance.css";
 
 const EquipmentBreakdownInsurance = () => {
   return (
+    <div className="equipment-breakdown-insurance-page">
     <PageLayout
       title="Equipment Breakdown Insurance"
       subtitle="Protect your business equipment, machinery, and technology from unexpected breakdowns and costly repairs."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const EquipmentBreakdownInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

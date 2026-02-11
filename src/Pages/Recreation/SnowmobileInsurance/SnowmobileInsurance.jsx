@@ -6,10 +6,11 @@ import "./SnowmobileInsurance.css";
 
 const SnowmobileInsurance = () => {
   return (
+    <div className="snow-mobile-insurance-page">
     <PageLayout
       title="Snowmobile Insurance"
       subtitle="Specialized coverage for snowmobiles, trails, and winter adventures."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const SnowmobileInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 
