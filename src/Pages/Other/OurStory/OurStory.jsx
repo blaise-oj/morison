@@ -5,10 +5,11 @@ import "./OurStory.css";
 
 const OurStory = () => {
   return (
+    <div className="our-story-page">
     <PageLayout
       title="Our Story"
       subtitle="Built on trust, service, and a commitment to protecting what matters most."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -88,6 +89,7 @@ const OurStory = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

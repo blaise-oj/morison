@@ -5,10 +5,11 @@ import "./WeddingInsurance.css";
 
 const WeddingInsurance = () => {
   return (
+      <div className="wedding-insurance-page">  
     <PageLayout
       title="Wedding Insurance"
       subtitle="Financial protection for your wedding day and special celebration."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -94,6 +95,7 @@ const WeddingInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

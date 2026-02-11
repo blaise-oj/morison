@@ -5,10 +5,11 @@ import "./HondaInsurance.css";
 
 const HondaInsurance = () => {
   return (
+      <div className="honda-insurance-page">
     <PageLayout
       title="Honda Insurance"
       subtitle="Comprehensive protection for all Honda vehicles, from sedans to SUVs."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const HondaInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

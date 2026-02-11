@@ -6,10 +6,11 @@ import "./EngagementRingInsurance.css";
 
 const EngagementRingInsurance = () => {
   return (
+      <div className="engagement-ring-insurance-page">
     <PageLayout
       title="Engagement Ring Insurance"
       subtitle="Protect your precious engagement ring with tailored insurance coverage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const EngagementRingInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

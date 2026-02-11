@@ -5,10 +5,11 @@ import "./LexusInsurance.css";
 
 const LexusInsurance = () => {
   return (
+      <div className="lexus-insurance-page">
     <PageLayout
       title="Lexus Insurance"
       subtitle="Tailored insurance coverage for Lexus vehicles, combining luxury with protection."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const LexusInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

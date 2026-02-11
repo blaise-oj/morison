@@ -6,10 +6,11 @@ import "./CottageInsurance.css";
 
 const CottageInsurance = () => {
   return (
+      <div className="cottage-insurance-page">
     <PageLayout
       title="Cottage Insurance"
       subtitle="Comprehensive coverage for your seasonal or waterfront property."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -119,6 +120,7 @@ const CottageInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

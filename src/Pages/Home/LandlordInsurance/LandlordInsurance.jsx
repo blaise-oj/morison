@@ -6,10 +6,11 @@ import "./LandlordInsurance.css";
 
 const LandlordInsurance = () => {
   return (
+      <div className="landlord-insurance-page">
     <PageLayout
       title="Landlord Insurance"
       subtitle="Protect your rental property, income, and liability with specialized landlord coverage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -141,6 +142,7 @@ const LandlordInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

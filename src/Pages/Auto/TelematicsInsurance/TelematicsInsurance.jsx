@@ -5,10 +5,11 @@ import "./TelematicsInsurance.css";
 
 const TelematicsInsurance = () => {
   return (
+      <div className="telematics-insurance-page">
     <PageLayout
       title="Telematics Insurance"
       subtitle="Smart auto insurance that rewards safe driving through connected technology."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -119,6 +120,7 @@ const TelematicsInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -2,13 +2,15 @@
 import React from "react";
 import PageLayout from "../../Shared/PageLayout/PageLayout";
 import heroImg from "../../../assets/2.png"; // replace with your actual hero image
+import "./CondoInsurance.css";
 
 const CondoInsurance = () => {
   return (
+      <div className="condo-insurance-page">
     <PageLayout
       title="Condo Insurance in Ontario"
       subtitle="Our brokers compare Canada's top insurers to find customized condo coverage for you."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* Key Features */}
       <section className="insurance-features">
@@ -68,6 +70,7 @@ const CondoInsurance = () => {
         <p>Call 1-800-463-8074 or fill out the form to get started.</p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

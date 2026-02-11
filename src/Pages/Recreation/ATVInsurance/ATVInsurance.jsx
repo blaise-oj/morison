@@ -6,10 +6,11 @@ import "./ATVInsurance.css";
 
 const ATVInsurance = () => {
   return (
+    <div className="atv-insurance-page">
     <PageLayout
       title="ATV Insurance"
       subtitle="Specialized coverage for all-terrain vehicles, on and off the trail."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const ATVInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

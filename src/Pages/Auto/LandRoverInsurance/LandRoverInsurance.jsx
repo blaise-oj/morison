@@ -5,10 +5,11 @@ import "./LandRoverInsurance.css";
 
 const LandRoverInsurance = () => {
   return (
+      <div className="land-rover-insurance-page">
     <PageLayout
       title="Land Rover Insurance"
       subtitle="Comprehensive coverage for Land Rover vehicles, whether on-road or off-road."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const LandRoverInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

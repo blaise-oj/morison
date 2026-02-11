@@ -5,10 +5,11 @@ import "./TeslaInsurance.css";
 
 const TeslaInsurance = () => {
   return (
+      <div className="tesla-insurance-page">
     <PageLayout
       title="Tesla Insurance"
       subtitle="Comprehensive coverage for Tesla vehicles, protecting your electric car and technology."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const TeslaInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

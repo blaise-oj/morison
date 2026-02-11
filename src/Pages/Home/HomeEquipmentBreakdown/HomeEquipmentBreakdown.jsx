@@ -6,10 +6,11 @@ import "./HomeEquipmentBreakdown.css";
 
 const HomeEquipmentBreakdown = () => {
   return (
+      <div className="home-equipment-breakdown-page">
     <PageLayout
       title="Home Equipment Breakdown Insurance"
       subtitle="Protection for unexpected mechanical or electrical failures in your home."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const HomeEquipmentBreakdown = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

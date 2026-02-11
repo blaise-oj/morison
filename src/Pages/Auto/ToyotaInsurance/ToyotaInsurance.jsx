@@ -5,10 +5,11 @@ import "./ToyotaInsurance.css";
 
 const ToyotaInsurance = () => {
   return (
+      <div className="toyota-insurance-page">
     <PageLayout
       title="Toyota Insurance"
       subtitle="Comprehensive coverage for all Toyota vehicles, from sedans to SUVs and trucks."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const ToyotaInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

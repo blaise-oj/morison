@@ -5,10 +5,11 @@ import "./OutbuildingInsurance.css";
 
 const OutbuildingInsurance = () => {
   return (
+      <div className="outbuilding-insurance-page">
     <PageLayout
       title="Outbuilding Insurance Coverage"
       subtitle="Protecting detached structures on your property from unexpected damage or loss."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -96,6 +97,7 @@ const OutbuildingInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

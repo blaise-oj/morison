@@ -3,9 +3,12 @@ import "./Auto.css";
 
 const Auto = () => {
   return (
+    <div className="auto-page"> 
     <PageLayout
       title="Auto Insurance"
       subtitle="Smart protection for every journey"
+      cta={<button>Get an Auto Insurance Quote</button>}
+      headerClass="hero"
     >
       <div className="auto-page">
         {/* INTRO */}
@@ -75,6 +78,7 @@ const Auto = () => {
         </div>
       </div>
     </PageLayout>
+    </div>
   );
 };
 

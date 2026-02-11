@@ -5,10 +5,11 @@ import "./LifeInsurance.css";
 
 const LifeInsurance = () => {
   return (
+      <div className="life-insurance-page">
     <PageLayout
       title="Life Insurance"
       subtitle="Financial protection for your loved ones when it matters most."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -94,6 +95,7 @@ const LifeInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

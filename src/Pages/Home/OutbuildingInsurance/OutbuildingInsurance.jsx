@@ -1,15 +1,16 @@
 // src/Pages/Home/OutbuildingInsurance/OutbuildingInsurance.jsx
 import React from "react";
 import PageLayout from "../../Shared/PageLayout/PageLayout";
-import heroImg from "../../../assets/2.png"; // swap to garage / shed image later
+import heroImg from "../../../assets/21.png"; // swap to garage / shed image later
 import "./OutbuildingInsurance.css";
 
 const OutbuildingInsurance = () => {
   return (
+      <div className="outbuilding-insurance-page">
     <PageLayout
       title="Outbuilding Insurance"
       subtitle="Protect garages, sheds, workshops, and other detached structures on your property."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -107,6 +108,7 @@ const OutbuildingInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

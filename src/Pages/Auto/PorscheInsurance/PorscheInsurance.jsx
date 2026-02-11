@@ -1,14 +1,15 @@
 import React from "react";
 import PageLayout from "../../Shared/PageLayout/PageLayout";
-import heroImg from "../../../assets/2.png";
+import heroImg from "../../../assets/51.png";
 import "./PorscheInsurance.css";
 
 const PorscheInsurance = () => {
   return (
+      <div className="porsche-insurance-page">
     <PageLayout
       title="Porsche Insurance"
       subtitle="Premium coverage for Porsche vehicles, protecting performance and luxury."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const PorscheInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

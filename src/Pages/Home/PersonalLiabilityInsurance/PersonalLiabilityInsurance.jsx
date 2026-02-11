@@ -6,10 +6,11 @@ import "./PersonalLiabilityInsurance.css";
 
 const PersonalLiabilityInsurance = () => {
   return (
+      <div className="personal-liability-insurance-page">
     <PageLayout
       title="Personal Liability Insurance"
       subtitle="Protect yourself against legal claims for injury or property damage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -82,6 +83,7 @@ const PersonalLiabilityInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

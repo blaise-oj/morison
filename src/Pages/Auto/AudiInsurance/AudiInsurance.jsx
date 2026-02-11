@@ -5,10 +5,11 @@ import "./AudiInsurance.css";
 
 const AudiInsurance = () => {
   return (
+      <div className="audi-insurance-page">
     <PageLayout
       title="Audi Insurance"
       subtitle="Tailored coverage for Audi vehicles, combining performance with protection."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -107,6 +108,7 @@ const AudiInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

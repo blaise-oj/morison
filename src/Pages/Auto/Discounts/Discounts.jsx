@@ -5,10 +5,11 @@ import "./Discounts.css";
 
 const Discounts = () => {
   return (
+      <div className="discounts-auto-page">
     <PageLayout
       title="Auto Insurance Discounts"
       subtitle="Smart ways to lower your auto insurance premiums without sacrificing coverage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -115,6 +116,7 @@ const Discounts = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

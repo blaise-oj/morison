@@ -5,10 +5,11 @@ import "./WhyChooseMorison.css";
 
 const WhyChooseMorison = () => {
   return (
+      <div className="why-choose-morison-page">
     <PageLayout
       title="Why Choose Morison Insurance"
       subtitle="Trusted, reliable, and client-focused insurance solutions."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -88,6 +89,7 @@ const WhyChooseMorison = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

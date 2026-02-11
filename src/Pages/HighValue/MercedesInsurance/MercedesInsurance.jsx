@@ -5,10 +5,11 @@ import "./MercedesInsurance.css";
 
 const MercedesInsurance = () => {
   return (
+      <div className="mercedes-insurance-page">
     <PageLayout
       title="Mercedes Insurance"
       subtitle="Premium insurance coverage for your Mercedes vehicle, designed for luxury and protection."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const MercedesInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

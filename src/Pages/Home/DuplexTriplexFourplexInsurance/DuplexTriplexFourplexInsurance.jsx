@@ -6,10 +6,11 @@ import "./DuplexTriplexFourplexInsurance.css";
 
 const DuplexTriplexFourplexInsurance = () => {
   return (
+      <div className="duplex-triplex-fourplex-insurance-page">
     <PageLayout
       title="Duplex, Triplex & Fourplex Insurance"
       subtitle="Specialized insurance solutions for small multi-unit residential properties."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -132,6 +133,7 @@ const DuplexTriplexFourplexInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

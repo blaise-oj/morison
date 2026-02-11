@@ -6,10 +6,11 @@ import "./GardenInsurance.css";
 
 const GardenInsurance = () => {
   return (
+      <div className="garden-insurance-page">
     <PageLayout
       title="Garden Insurance"
       subtitle="Protect your outdoor spaces, landscaping, and garden equipment from unexpected damage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -111,6 +112,7 @@ const GardenInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

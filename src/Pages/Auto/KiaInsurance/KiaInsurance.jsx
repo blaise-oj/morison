@@ -5,10 +5,11 @@ import "./KiaInsurance.css";
 
 const KiaInsurance = () => {
   return (
+      <div className="kia-insurance-page">
     <PageLayout
       title="Kia Insurance"
       subtitle="Comprehensive coverage for all Kia vehicles, from sedans to SUVs."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const KiaInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

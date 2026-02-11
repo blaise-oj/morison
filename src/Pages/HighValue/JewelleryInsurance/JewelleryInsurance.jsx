@@ -6,10 +6,11 @@ import "./JewelleryInsurance.css";
 
 const JewelleryInsurance = () => {
   return (
+      <div className="jewellery-insurance-page">
     <PageLayout
       title="Jewellery Insurance"
       subtitle="Protect your precious jewellery with comprehensive coverage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const JewelleryInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

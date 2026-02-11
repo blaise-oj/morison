@@ -6,10 +6,11 @@ import "./FineArtInsurance.css";
 
 const FineArtInsurance = () => {
   return (
+      <div className="fine-art-insurance-page">
     <PageLayout
       title="Fine Art Insurance"
       subtitle="Protect your valuable art collection with specialized insurance coverage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const FineArtInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

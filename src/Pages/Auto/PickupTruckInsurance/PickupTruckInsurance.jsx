@@ -5,10 +5,11 @@ import "./PickupTruckInsurance.css";
 
 const PickupTruckInsurance = () => {
   return (
+      <div className="pickup-truck-insurance-page">
     <PageLayout
       title="Pickup Truck Insurance"
       subtitle="Protect your truck with coverage tailored for work, adventure, and daily driving."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -108,6 +109,7 @@ const PickupTruckInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

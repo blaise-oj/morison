@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className="mega-column">
               <h4>Home Coverage</h4>
               <Link to="/home/home-insurance">Home Insurance</Link>
-              <Link to="/home/bundled-home-auto">Bundled Home & Auto</Link>
+              <Link to="/home/bundled-home-auto-insurance">Bundled Home & Auto</Link>
               <Link to="/home/apartment-insurance">Apartment Insurance</Link>
               <Link to="/home/condo-insurance">Condo Insurance</Link>
               <Link to="/home/townhouse-insurance">Townhouse Insurance</Link>
@@ -49,14 +49,13 @@ const Navbar = () => {
               <Link to="/home/rented-condo-insurance">Rented Condo Insurance</Link>
               <Link to="/home/rented-dwelling-insurance">Rented Dwelling Insurance</Link>
               <Link to="/home/landlord-insurance">Landlord Insurance</Link>
-              <Link to="/home/duplex-triplex-fourplex">Duplex, Triplex & Fourplex</Link>
+              <Link to="/home/duplex-triplex-fourplex-insurance">Duplex, Triplex & Fourplex</Link>
               <Link to="/home/chalet-insurance">Chalet Insurance</Link>
               <Link to="/home/cottage-insurance">Cottage Insurance</Link>
             </div>
 
             <div className="mega-column">
               <h4>Extras & Protection</h4>
-              <Link to="/home/contents-insurance">Contents Insurance Coverage</Link>
               <Link to="/home/personal-liability-insurance">Personal Liability Insurance</Link>
               <Link to="/home/home-equipment-breakdown">Home Equipment Breakdown</Link>
               <Link to="/home/outbuilding-insurance">Outbuilding Insurance</Link>
@@ -349,7 +348,7 @@ const Navbar = () => {
       <div className="mobile-col">
         <h4>Home Coverage</h4>
         <Link to="/home/home-insurance" onClick={() => setMobileMenu(false)}>Home Insurance</Link>
-        <Link to="/home/bundled-home-auto" onClick={() => setMobileMenu(false)}>Bundled Home & Auto</Link>
+        <Link to="/home/bundled-home-auto-insurance" onClick={() => setMobileMenu(false)}>Bundled Home & Auto</Link>
         <Link to="/home/apartment-insurance" onClick={() => setMobileMenu(false)}>Apartment Insurance</Link>
         <Link to="/home/condo-insurance" onClick={() => setMobileMenu(false)}>Condo Insurance</Link>
         <Link to="/home/townhouse-insurance" onClick={() => setMobileMenu(false)}>Townhouse Insurance</Link>
@@ -364,14 +363,13 @@ const Navbar = () => {
         <Link to="/home/rented-condo-insurance" onClick={() => setMobileMenu(false)}>Rented Condo Insurance</Link>
         <Link to="/home/rented-dwelling-insurance" onClick={() => setMobileMenu(false)}>Rented Dwelling Insurance</Link>
         <Link to="/home/landlord-insurance" onClick={() => setMobileMenu(false)}>Landlord Insurance</Link>
-        <Link to="/home/duplex-triplex-fourplex" onClick={() => setMobileMenu(false)}>Duplex, Triplex & Fourplex</Link>
+        <Link to="/home/duplex-triplex-fourplex-insurance" onClick={() => setMobileMenu(false)}>Duplex, Triplex & Fourplex</Link>
         <Link to="/home/chalet-insurance" onClick={() => setMobileMenu(false)}>Chalet Insurance</Link>
         <Link to="/home/cottage-insurance" onClick={() => setMobileMenu(false)}>Cottage Insurance</Link>
       </div>
 
       <div className="mobile-col">
         <h4>Extras & Protection</h4>
-        <Link to="/home/contents-insurance" onClick={() => setMobileMenu(false)}>Contents Insurance Coverage</Link>
         <Link to="/home/personal-liability-insurance" onClick={() => setMobileMenu(false)}>Personal Liability Insurance</Link>
         <Link to="/home/home-equipment-breakdown" onClick={() => setMobileMenu(false)}>Home Equipment Breakdown</Link>
         <Link to="/home/outbuilding-insurance" onClick={() => setMobileMenu(false)}>Outbuilding Insurance</Link>

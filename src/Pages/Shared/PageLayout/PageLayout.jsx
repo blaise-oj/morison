@@ -1,5 +1,6 @@
 import React from "react";
 import "./PageLayout.css";
+import "./SubpageStyles.css";
 
 const PageLayout = ({
   title,
@@ -7,12 +8,13 @@ const PageLayout = ({
   breadcrumbs,
   cta,
   children,
+  headerClass = "",
 }) => {
   return (
     <main className="page-layout">
       {/* Optional header section */}
       {(title || subtitle || cta) && (
-        <header className="page-header">
+        <header className={`page-header ${headerClass}`}>
           <div className="page-header-inner">
             {breadcrumbs && <nav className="page-breadcrumbs">{breadcrumbs}</nav>}
             {title && <h1 className="page-title">{title}</h1>}

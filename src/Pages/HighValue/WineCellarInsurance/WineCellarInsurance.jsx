@@ -6,10 +6,11 @@ import "./WineCellarInsurance.css";
 
 const WineCellarInsurance = () => {
   return (
+      <div className="wine-cellar-insurance-page">
     <PageLayout
       title="Wine Cellar Insurance"
       subtitle="Protect your valuable wine collection with specialized insurance coverage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const WineCellarInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

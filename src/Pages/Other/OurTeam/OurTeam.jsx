@@ -5,10 +5,11 @@ import "./OurTeam.css";
 
 const OurTeam = () => {
   return (
+      <div className="our-team-page">
     <PageLayout
       title="Our Team"
       subtitle="Experienced, dedicated, and committed to putting clients first."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -86,6 +87,7 @@ const OurTeam = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

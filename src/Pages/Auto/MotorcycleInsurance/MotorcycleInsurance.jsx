@@ -5,10 +5,11 @@ import "./MotorcycleInsurance.css";
 
 const MotorcycleInsurance = () => {
   return (
+      <div className="motorcycle-insurance-page">
     <PageLayout
       title="Motorcycle Insurance"
       subtitle="Comprehensive coverage to protect you and your bike on the road."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -103,6 +104,7 @@ const MotorcycleInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

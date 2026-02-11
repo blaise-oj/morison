@@ -5,10 +5,11 @@ import "./HomeInsurance.css";
 
 const HomeInsurance = () => {
   return (
+    <div className="home-insurance-page">
     <PageLayout
       title="Home Insurance"
       subtitle="Safeguard your most valuable investment with the right insurance coverage — just for you!"
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -143,6 +144,7 @@ const HomeInsurance = () => {
       </section>
 
     </PageLayout>
+    </div>
   );
 };
 

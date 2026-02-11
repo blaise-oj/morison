@@ -5,10 +5,11 @@ import "./OurInsurancePartners.css";
 
 const OurInsurancePartners = () => {
   return (
+      <div className="our-insurance-partners-page">
     <PageLayout
       title="Our Insurance Partners"
       subtitle="Collaborating with leading insurers to provide the best coverage options."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -71,6 +72,7 @@ const OurInsurancePartners = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

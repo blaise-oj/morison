@@ -6,10 +6,11 @@ import "./WatchInsurance.css";
 
 const WatchInsurance = () => {
   return (
+      <div className="watch-insurance-page">
     <PageLayout
       title="Watch Insurance"
       subtitle="Comprehensive coverage for luxury and high-value watches."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const WatchInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

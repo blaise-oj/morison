@@ -5,10 +5,11 @@ import "./ContentsInsurance.css";
 
 const ContentsInsurance = () => {
   return (
+    <div className="contents-insurance-page">
     <PageLayout
       title="Contents Insurance Coverage"
       subtitle="Protecting your personal belongings against loss, damage, or theft."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -97,6 +98,7 @@ const ContentsInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

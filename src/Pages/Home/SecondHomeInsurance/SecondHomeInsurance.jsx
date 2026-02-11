@@ -6,10 +6,11 @@ import "./SecondHomeInsurance.css";
 
 const SecondHomeInsurance = () => {
   return (
+    <div className="second-home-insurance-page">
     <PageLayout
       title="Second Home Insurance"
       subtitle="Specialized insurance coverage for vacation, seasonal, and secondary homes."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -152,6 +153,7 @@ const SecondHomeInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

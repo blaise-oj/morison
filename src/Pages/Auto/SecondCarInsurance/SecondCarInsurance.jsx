@@ -5,10 +5,11 @@ import "./SecondCarInsurance.css";
 
 const SecondCarInsurance = () => {
   return (
+      <div className="second-car-insurance-page">
     <PageLayout
       title="Second Car Insurance"
       subtitle="Smart coverage options for your additional vehicle — with opportunities to save."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -135,6 +136,7 @@ const SecondCarInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

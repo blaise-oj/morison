@@ -3,9 +3,11 @@ import "./Business.css";
 
 const Business = () => {
   return (
+    <div className="business-insurance-page">
     <PageLayout
       title="Business Insurance"
       subtitle="Protecting your business at every stage of growth"
+      headerClass="hero"
     >
       <div className="business-page">
 
@@ -99,6 +101,7 @@ const Business = () => {
 
       </div>
     </PageLayout>
+    </div>
   );
 };
 

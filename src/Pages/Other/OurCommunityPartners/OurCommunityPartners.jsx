@@ -5,10 +5,11 @@ import "./OurCommunityPartners.css";
 
 const OurCommunityPartners = () => {
   return (
+      <div className="our-community-partners-page">
     <PageLayout
       title="Our Community Partners"
       subtitle="Collaborating with organizations to strengthen the communities we serve."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -74,6 +75,7 @@ const OurCommunityPartners = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

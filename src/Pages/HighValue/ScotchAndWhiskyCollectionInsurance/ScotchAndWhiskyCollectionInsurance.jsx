@@ -6,10 +6,11 @@ import "./ScotchAndWhiskyCollectionInsurance.css";
 
 const ScotchAndWhiskyCollectionInsurance = () => {
   return (
+      <div className="scotch-whisky-collection-insurance-page">
     <PageLayout
       title="Scotch & Whisky Collection Insurance"
       subtitle="Comprehensive protection for your valuable whisky and scotch collections."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const ScotchAndWhiskyCollectionInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

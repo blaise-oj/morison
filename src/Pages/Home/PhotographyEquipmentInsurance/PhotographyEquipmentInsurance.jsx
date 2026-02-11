@@ -6,10 +6,11 @@ import "./PhotographyEquipmentInsurance.css";
 
 const PhotographyEquipmentInsurance = () => {
   return (
+      <div className="photography-equipment-insurance-page">
     <PageLayout
       title="Photography Equipment Insurance"
       subtitle="Specialized protection for cameras, lenses, and professional photography gear."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -109,6 +110,7 @@ const PhotographyEquipmentInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

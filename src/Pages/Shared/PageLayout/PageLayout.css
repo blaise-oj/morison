@@ -18,11 +18,38 @@ body, html {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 8rem 2rem 4rem; /* Add space from navbar */
-  background-color: #6E9B2F; /* optional hero bg color */
+  padding: 6rem 2rem 3rem;
+  background-color: transparent; /* ✅ no forced color */
+  color: #1a1a1a; /* default text color */
+}
+/* HERO VARIANT */
+.page-header.hero {
+  position: relative;
+  padding: 8rem 2rem;
   color: #fff;
 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: clamp(450px, 65vh, 750px);
 }
+
+
+.page-header.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.page-header.hero .page-header-inner {
+  position: relative;
+  z-index: 2;
+}
+
+
 
 .page-header-inner {
   max-width: 900px;

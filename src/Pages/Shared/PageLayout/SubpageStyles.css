@@ -1,0 +1,41 @@
+/* ===============================
+   GLOBAL SUBPAGE STYLES
+================================ */
+
+/* Applies to ALL pages using PageLayout */
+.page-layout .page-content section {
+  margin-bottom: 4rem;
+  line-height: 1.7;
+  color: #1f3a5f;
+}
+
+.page-layout .page-content h2 {
+  font-size: 2rem;
+  color: #6e9b2f;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.page-layout .page-content h3 {
+  font-size: 1.5rem;
+  color: #4a6b2a;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.page-layout .page-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page-layout .page-content ul {
+  margin-left: 1.25rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.page-layout .page-content ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}

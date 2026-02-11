@@ -5,10 +5,11 @@ import "./LuxuryCarInsurance.css";
 
 const LuxuryCarInsurance = () => {
   return (
+      <div className="luxury-car-insurance-page">
     <PageLayout
       title="Luxury Car Insurance"
       subtitle="Premium protection for high-end vehicles and discerning drivers."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -141,6 +142,7 @@ const LuxuryCarInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

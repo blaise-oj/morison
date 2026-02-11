@@ -3,9 +3,12 @@ import "./HighValue.css";
 
 const HighValue = () => {
   return (
+    <div className="highvalue-pages">
     <PageLayout
       title="High-Value Insurance"
       subtitle="Specialized protection for what matters most"
+      headerClass="hero"
+      cta={<button>Request a Private Consultation</button>}
     >
       <div className="highvalue-page">
         {/* INTRO */}
@@ -80,6 +83,7 @@ const HighValue = () => {
         </div>
       </div>
     </PageLayout>
+    </div>
   );
 };
 

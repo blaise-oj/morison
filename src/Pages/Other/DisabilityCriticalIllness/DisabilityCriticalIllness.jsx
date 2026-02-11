@@ -5,10 +5,11 @@ import "./DisabilityCriticalIllness.css";
 
 const DisabilityCriticalIllness = () => {
   return (
+    <div className="disability-critical-illness-page">
     <PageLayout
       title="Disability & Critical Illness Insurance"
       subtitle="Income and health protection when life takes an unexpected turn."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -95,6 +96,7 @@ const DisabilityCriticalIllness = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

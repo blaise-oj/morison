@@ -3,12 +3,14 @@ import PageLayout from "../../Shared/PageLayout/PageLayout";
 import heroImg from "../../../assets/2.png";
 import "./HybridCarInsurance.css";
 
+
 const HybridCarInsurance = () => {
   return (
+      <div className="hybrid-car-insurance-page">
     <PageLayout
       title="Hybrid Car Insurance"
       subtitle="Smart insurance solutions for hybrid vehicles and modern drivers."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -137,6 +139,7 @@ const HybridCarInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

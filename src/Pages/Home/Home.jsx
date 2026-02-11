@@ -5,10 +5,12 @@ import "./Home.css";
 
 const Home = () => {
   return (
+    <div className="home-page">
     <PageLayout
       title="Welcome to Morison Insurance"
       subtitle="We protect what matters most to you"
       cta={<button>Get a Free Quote</button>}
+      headerClass="hero"
     >
       {/* Hero info section */}
       <section className="home-intro">
@@ -56,6 +58,7 @@ const Home = () => {
         </ul>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

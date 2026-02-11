@@ -24,6 +24,9 @@
   color: #444;
   margin-bottom: 1rem;
 }
+.highvalue-pages .page-header{
+  background-image: url("../../assets/62.jpeg");
+}
 
 /* ASSETS */
 .highvalue-assets {

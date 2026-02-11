@@ -5,10 +5,11 @@ import "./UsageBasedInsurance.css";
 
 const UsageBasedInsurance = () => {
   return (
+      <div className="usage-based-insurance-page">
     <PageLayout
       title="Usage-Based Insurance"
       subtitle="Auto insurance that adjusts to how much and how safely you drive."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -120,6 +121,7 @@ const UsageBasedInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

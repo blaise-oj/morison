@@ -6,10 +6,11 @@ import "./ChaletInsurance.css";
 
 const ChaletInsurance = () => {
   return (
+      <div className="chalet-insurance-page">
     <PageLayout
       title="Chalet Insurance"
       subtitle="Protect your mountain or seasonal getaway property with comprehensive coverage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -119,6 +120,7 @@ const ChaletInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

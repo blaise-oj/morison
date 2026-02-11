@@ -6,10 +6,11 @@ import "./MusicalInstrumentInsurance.css";
 
 const MusicalInstrumentInsurance = () => {
   return (
+      <div className="musical-instrument-insurance-page">
     <PageLayout
       title="Musical Instrument Insurance"
       subtitle="Comprehensive coverage for high-value and professional musical instruments."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const MusicalInstrumentInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

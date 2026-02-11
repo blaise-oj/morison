@@ -5,10 +5,11 @@ import "./JeepInsurance.css";
 
 const JeepInsurance = () => {
   return (
+      <div className="jeep-insurance-page">
     <PageLayout
       title="Jeep Insurance"
       subtitle="Coverage designed for Jeep vehicles — from city streets to rugged trails."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const JeepInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

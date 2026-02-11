@@ -6,10 +6,11 @@ import "./BoatInsurance.css";
 
 const BoatInsurance = () => {
   return (
+    <div className="boat-insurance-page">
     <PageLayout
       title="Boat Insurance"
       subtitle="Reliable coverage for personal, recreational, and luxury boats."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const BoatInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

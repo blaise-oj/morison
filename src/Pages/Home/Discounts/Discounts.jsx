@@ -6,10 +6,11 @@ import "./Discounts.css";
 
 const Discounts = () => {
   return (
+      <div className="discounts-page">
     <PageLayout
       title="Home Insurance Discounts"
       subtitle="Save more on your home insurance with available discounts and bundled savings."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -108,6 +109,7 @@ const Discounts = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

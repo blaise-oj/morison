@@ -6,10 +6,11 @@ import "./GolfEquipmentInsurance.css";
 
 const GolfEquipmentInsurance = () => {
   return (
+    <div className="golf-equipment-insurance-page">
     <PageLayout
       title="Golf Equipment Insurance"
       subtitle="Specialized coverage for golf clubs, bags, and high-value equipment."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const GolfEquipmentInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

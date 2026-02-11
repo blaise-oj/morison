@@ -6,10 +6,11 @@ import "./HomeDaycareInsurance.css";
 
 const HomeDaycareInsurance = () => {
   return (
+      <div className="home-daycare-insurance-page">
     <PageLayout
       title="Home Daycare Insurance"
       subtitle="Specialized insurance coverage for licensed and unlicensed home daycare providers."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -113,6 +114,7 @@ const HomeDaycareInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -1,13 +1,15 @@
 import React from "react";
 import PageLayout from "../../Shared/PageLayout/PageLayout";
+import "./ApartmentInsurance.css";
 import apartmentHero from "../../../assets/apartmenthero.jpg"; // use a different image
 
 const ApartmentInsurance = () => {
   return (
+    <div className="apartment-insurance-page">
     <PageLayout
       title="Apartment Insurance Ontario"
       subtitle="Protect your personal belongings with customized apartment insurance coverage."
-      image={apartmentHero}
+      headerClass="hero"
     >
       {/* INTRO */}
       <h2>Apartment Insurance Ontario</h2>
@@ -121,6 +123,7 @@ const ApartmentInsurance = () => {
         <strong>Or complete the form below to get your quote in minutes.</strong>
       </p>
     </PageLayout>
+    </div>
   );
 };
 

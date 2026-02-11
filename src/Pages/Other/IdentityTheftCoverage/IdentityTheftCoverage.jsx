@@ -5,10 +5,11 @@ import "./IdentityTheftCoverage.css";
 
 const IdentityTheftCoverage = () => {
   return (
+      <div className="identity-theft-coverage-page">
     <PageLayout
       title="Identity Theft Coverage"
       subtitle="Protect your personal and financial identity against fraud and misuse."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -97,6 +98,7 @@ const IdentityTheftCoverage = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./RentalCarInsurance.css";
 
 const RentalCarInsurance = () => {
   return (
+      <div className="rental-car-insurance-page">
     <PageLayout
       title="Rental Car Insurance"
       subtitle="Coverage that protects you while driving a rented vehicle."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -95,6 +96,7 @@ const RentalCarInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

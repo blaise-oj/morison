@@ -5,10 +5,11 @@ import "./BentleyInsurance.css";
 
 const BentleyInsurance = () => {
   return (
+      <div className="bentley-insurance-page">
     <PageLayout
       title="Bentley Insurance"
       subtitle="Luxury coverage for Bentley vehicles that matches performance and prestige."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -106,6 +107,7 @@ const BentleyInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

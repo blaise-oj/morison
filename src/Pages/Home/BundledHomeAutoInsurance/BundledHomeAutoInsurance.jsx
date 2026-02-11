@@ -1,13 +1,15 @@
 import React from "react";
 import PageLayout from "../../Shared/PageLayout/PageLayout";
 import carap from "../../../assets/carap.jpg"; // change image as needed
+import "./BundledHomeAutoInsurance.css";
 
 const BundledHomeAutoInsurance = () => {
   return (
+    <div className="bundled-home-auto-insurance-page">
     <PageLayout
       title="Bundle Your Home and Auto Insurance in Ontario"
       subtitle="We shop top Canadian insurers to tailor coverage for your home and car."
-      image={carap}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -134,6 +136,7 @@ const BundledHomeAutoInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

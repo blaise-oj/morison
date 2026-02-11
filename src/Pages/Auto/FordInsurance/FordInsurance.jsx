@@ -5,10 +5,11 @@ import "./FordInsurance.css";
 
 const FordInsurance = () => {
   return (
+    <div className="ford-insurance-page">
     <PageLayout
       title="Ford Insurance"
       subtitle="Comprehensive coverage for your Ford vehicle, from daily drivers to trucks."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const FordInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

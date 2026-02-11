@@ -5,10 +5,11 @@ import "./JewelleryCoverage.css";
 
 const JewelleryCoverage = () => {
   return (
+      <div className="jewellery-coverage-page">
     <PageLayout
       title="Jewellery Coverage"
       subtitle="Protect your valuable jewelry against loss, theft, or damage."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -97,6 +98,7 @@ const JewelleryCoverage = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

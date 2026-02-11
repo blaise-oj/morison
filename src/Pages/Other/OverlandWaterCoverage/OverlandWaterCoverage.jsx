@@ -5,10 +5,11 @@ import "./OverlandWaterCoverage.css";
 
 const OverlandWaterCoverage = () => {
   return (
+      <div className="overland-water-coverage-page">
     <PageLayout
       title="Overland Water Coverage"
       subtitle="Protection against water damage caused by surface water and flooding."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -94,6 +95,7 @@ const OverlandWaterCoverage = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

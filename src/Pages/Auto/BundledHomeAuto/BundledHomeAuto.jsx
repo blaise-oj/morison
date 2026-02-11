@@ -5,10 +5,11 @@ import "./BundledHomeAuto.css";
 
 const BundledHomeAuto = () => {
   return (
+      <div className="bundled-home-auto-page">  
     <PageLayout
       title="Bundled Home & Auto Insurance"
       subtitle="Simpler coverage, better protection, and bigger savings when you bundle."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -105,6 +106,7 @@ const BundledHomeAuto = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

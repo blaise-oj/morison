@@ -5,10 +5,11 @@ import "./CarInsurance.css";
 
 const CarInsurance = () => {
   return (
+      <div className="car-insurance-page">
     <PageLayout
       title="Car Insurance"
       subtitle="Reliable auto insurance coverage tailored to how, where, and what you drive."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -153,6 +154,7 @@ const CarInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

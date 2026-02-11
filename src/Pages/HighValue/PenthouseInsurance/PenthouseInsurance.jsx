@@ -6,10 +6,11 @@ import "./PenthouseInsurance.css";
 
 const PenthouseInsurance = () => {
   return (
+      <div className="penthouse-insurance-page">
     <PageLayout
       title="Penthouse Insurance"
       subtitle="Comprehensive protection for luxury penthouses and rooftop residences."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const PenthouseInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./HyundaiInsurance.css";
 
 const HyundaiInsurance = () => {
   return (
+      <div className="hyundai-insurance-page">
     <PageLayout
       title="Hyundai Insurance"
       subtitle="Comprehensive coverage for all Hyundai vehicles, from sedans to SUVs."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const HyundaiInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

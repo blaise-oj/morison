@@ -5,10 +5,11 @@ import "./AdditionalLivingExpenses.css";
 
 const AdditionalLivingExpenses = () => {
   return (
+    <div className="additional-living-expenses-page">
     <PageLayout
       title="Additional Living Expenses Coverage"
       subtitle="Financial protection for temporary living costs when your home becomes uninhabitable."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -96,6 +97,7 @@ const AdditionalLivingExpenses = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

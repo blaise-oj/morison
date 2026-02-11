@@ -23,7 +23,9 @@
   line-height: 1.8;
   color: #444;
 }
-
+.auto-page .page-header {
+  background-image: url("../../assets/auto.jpeg");
+}
 /* COVERAGES */
 .auto-coverages {
   text-align: center;

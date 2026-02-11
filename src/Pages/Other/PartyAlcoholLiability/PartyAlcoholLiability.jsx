@@ -5,10 +5,11 @@ import "./PartyAlcoholLiability.css";
 
 const PartyAlcoholLiability = () => {
   return (
+      <div className="party-alcohol-liability-page">
     <PageLayout
       title="Party Alcohol Liability Insurance"
       subtitle="Protection for hosts serving alcohol at private events and celebrations."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -96,6 +97,7 @@ const PartyAlcoholLiability = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

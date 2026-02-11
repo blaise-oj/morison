@@ -5,10 +5,11 @@ import "./ElectricCarInsurance.css";
 
 const ElectricCarInsurance = () => {
   return (
+      <div className="electric-car-insurance-page">
     <PageLayout
       title="Electric Car Insurance"
       subtitle="Specialized auto insurance designed for electric vehicles and modern driving."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -135,6 +136,7 @@ const ElectricCarInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

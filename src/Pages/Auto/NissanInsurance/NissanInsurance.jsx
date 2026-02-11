@@ -5,10 +5,11 @@ import "./NissanInsurance.css";
 
 const NissanInsurance = () => {
   return (
+      <div className="nissan-insurance-page">
     <PageLayout
       title="Nissan Insurance"
       subtitle="Tailored coverage for all Nissan vehicles, from sedans to SUVs and trucks."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -100,6 +101,7 @@ const NissanInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -1,116 +1,189 @@
-/* Container styling */
+/* =========================
+   PAGE WRAPPER
+========================= */
 .other-page {
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  padding: 40px 20px;
+  gap: 80px;
+  padding-bottom: 60px;
 }
 
-/* Intro section */
-.other-intro {
-  text-align: center;
-  max-width: 900px;
+/* =========================
+   HERO (PageLayout override)
+========================= */
+.other-page .page-header.hero {
+  background-image: url("../../assets/2.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 2rem 5rem;
+  color: #fff;
+  position: relative;
+}
+
+/* Keep text above overlay */
+.other-page .page-header-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero typography */
+.other-page .page-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.other-page .page-subtitle {
+  font-size: 1.3rem;
+  max-width: 720px;
   margin: 0 auto;
 }
 
+/* =========================
+   INTRO SECTION
+========================= */
+.other-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .other-intro h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 20px;
-  color: #08003a;
+  color: #1a1a1a;
 }
 
 .other-intro p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #333;
+  color: #444;
   margin-bottom: 15px;
 }
 
-/* Highlights / grid section */
+/* =========================
+   HIGHLIGHTS GRID
+========================= */
 .other-highlights {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .other-highlights h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+  font-size: 2.2rem;
   text-align: center;
-  color: #08003a;
+  margin-bottom: 40px;
+  color: #1a1a1a;
 }
 
 .other-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
 }
 
 .other-card {
-  background: #f8f8ff;
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 14px;
+  border-top: 4px solid #6e9b2f;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .other-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
 }
 
 .other-card h3 {
   font-size: 1.4rem;
-  margin-bottom: 12px;
-  color: #08003a;
+  margin-bottom: 14px;
+  color: #1a1a1a;
 }
 
 .other-card p {
   font-size: 1rem;
   color: #555;
+  line-height: 1.6;
 }
 
-/* Why Us section */
+/* =========================
+   WHY CHOOSE US
+========================= */
 .other-why-us {
   max-width: 900px;
   margin: 0 auto;
 }
 
 .other-why-us h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
-  margin-bottom: 25px;
-  color: #08003a;
+  margin-bottom: 30px;
+  color: #1a1a1a;
 }
 
 .other-why-us ul {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
 }
 
 .other-why-us li {
   font-size: 1.1rem;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   color: #333;
+  padding-left: 28px;
+  position: relative;
 }
 
-/* CTA */
+.other-why-us li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #6e9b2f;
+  font-weight: bold;
+}
+
+/* =========================
+   CTA
+========================= */
 .other-cta {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .other-cta button {
   background-color: #6e9b2f;
   color: #fff;
   border: none;
-  padding: 14px 30px;
+  padding: 16px 36px;
   font-size: 1.1rem;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .other-cta button:hover {
-  background-color: #6e9b2f;
+  background-color: #5c8427;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .other-page {
+    gap: 60px;
+  }
+
+  .other-page .page-title {
+    font-size: 2.2rem;
+  }
+
+  .other-intro h2,
+  .other-highlights h2,
+  .other-why-us h2 {
+    font-size: 1.8rem;
+  }
 }

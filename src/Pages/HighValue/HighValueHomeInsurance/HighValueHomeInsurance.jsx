@@ -6,10 +6,11 @@ import "./HighValueHomeInsurance.css";
 
 const HighValueHomeInsurance = () => {
   return (
+      <div className="high-value-home-insurance-page">
     <PageLayout
       title="High-Value Home Insurance"
       subtitle="Protect your premium properties with tailored insurance solutions."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -101,6 +102,7 @@ const HighValueHomeInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

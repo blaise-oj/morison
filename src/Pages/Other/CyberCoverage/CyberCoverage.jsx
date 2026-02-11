@@ -5,10 +5,11 @@ import "./CyberCoverage.css";
 
 const CyberCoverage = () => {
   return (
+    <div className="cyber-coverage-page">
     <PageLayout
       title="Cyber Coverage"
       subtitle="Protecting your digital assets, personal data, and online operations from cyber threats."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -98,6 +99,7 @@ const CyberCoverage = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

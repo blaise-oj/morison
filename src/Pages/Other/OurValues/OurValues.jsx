@@ -5,10 +5,11 @@ import "./OurValues.css";
 
 const OurValues = () => {
   return (
+      <div className="our-values-page">
     <PageLayout
       title="Our Values"
       subtitle="The principles that guide everything we do at Morison Insurance."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -85,6 +86,7 @@ const OurValues = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

@@ -5,10 +5,11 @@ import "./AwardsRecognition.css";
 
 const AwardsRecognition = () => {
   return (
+    <div className="awards-recognition-page">
     <PageLayout
       title="Awards & Recognition"
       subtitle="Trusted, recognized, and committed to excellence in insurance services."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -84,6 +85,7 @@ const AwardsRecognition = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

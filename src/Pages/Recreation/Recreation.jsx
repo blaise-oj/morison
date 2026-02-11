@@ -3,9 +3,11 @@ import "./Recreation.css";
 
 const Recreation = () => {
   return (
+    <div className="recreation-insurance-pages">
     <PageLayout
       title="Recreation Insurance"
       subtitle="Protecting your adventures, water sports, and leisure activities"
+      headerClass="hero"
     >
       <div className="recreation-page">
         {/* INTRODUCTION */}
@@ -65,6 +67,7 @@ const Recreation = () => {
         </div>
       </div>
     </PageLayout>
+    </div>
   );
 };
 

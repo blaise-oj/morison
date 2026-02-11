@@ -5,10 +5,11 @@ import "./WeekendCarInsurance.css";
 
 const WeekendCarInsurance = () => {
   return (
+      <div className="weekend-car-insurance-page">
     <PageLayout
       title="Weekend Car Insurance"
       subtitle="Affordable auto insurance for vehicles driven occasionally or on weekends."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -136,6 +137,7 @@ const WeekendCarInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 
