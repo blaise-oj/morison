@@ -5,10 +5,11 @@ import "./HomeBasedBusinessInsurance.css";
 
 const HomeBasedBusinessInsurance = () => {
   return (
+    <div className="home-based-business-insurance-page">
     <PageLayout
       title="Home-Based Business Insurance"
       subtitle="Protect your home business from property damage, liability, and operational risks."
-      image={heroImg}
+      headerClass="hero"
     >
       {/* INTRO */}
       <section>
@@ -104,6 +105,7 @@ const HomeBasedBusinessInsurance = () => {
         </p>
       </section>
     </PageLayout>
+    </div>
   );
 };
 

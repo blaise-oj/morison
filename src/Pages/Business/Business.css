@@ -70,7 +70,9 @@
   line-height: 1.6;
   color: #333;
 }
-
+.business-insurance-page .page-header {
+  background-image: url("../../assets/126.jpeg");
+}
 /* COVERAGE section */
 .business-coverages {
   margin-bottom: 60px;

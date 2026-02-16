@@ -6,7 +6,7 @@ import "./YachtInsurance.css";
 
 const YachtInsurance = () => {
   return (
-    <div className="yacht-insurance-page">
+    <div className="yacht-insurance-pages">
     <PageLayout
       title="Yacht Insurance"
       subtitle="Comprehensive protection for recreational yachts and luxury watercraft."

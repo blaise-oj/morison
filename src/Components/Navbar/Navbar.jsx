@@ -173,14 +173,12 @@ const Navbar = () => {
               <Link to="/recreation/atv-insurance">ATV Insurance</Link>
               <Link to="/recreation/rv-insurance">RV Insurance</Link>
               <Link to="/recreation/travel-trailer-insurance">Travel Trailer Insurance</Link>
-              <Link to="/recreation/snowmobile-insurance">Snowmobile Insurance</Link>
+              
             </div>
 
             <div className="mega-column">
               <h4>Sports & Travel Protection</h4>
               <Link to="/recreation/golf-equipment-insurance">Golf Equipment Insurance</Link>
-              <Link to="/recreation/ski-equipment-insurance">Ski Equipment Insurance</Link>
-              <Link to="/recreation/snowboard-equipment-insurance">Snowboard Equipment Insurance</Link>
               <Link to="/recreation/travel-insurance">Travel Insurance</Link>
             </div>
           </div>
@@ -542,14 +540,12 @@ const Navbar = () => {
         <Link to="/recreation/atv-insurance" onClick={() => setMobileMenu(false)}>ATV Insurance</Link>
         <Link to="/recreation/rv-insurance" onClick={() => setMobileMenu(false)}>RV Insurance</Link>
         <Link to="/recreation/travel-trailer-insurance" onClick={() => setMobileMenu(false)}>Travel Trailer Insurance</Link>
-        <Link to="/recreation/snowmobile-insurance" onClick={() => setMobileMenu(false)}>Snowmobile Insurance</Link>
+        
       </div>
 
       <div className="mobile-col">
         <h4>Sports & Travel Protection</h4>
         <Link to="/recreation/golf-equipment-insurance" onClick={() => setMobileMenu(false)}>Golf Equipment Insurance</Link>
-        <Link to="/recreation/ski-equipment-insurance" onClick={() => setMobileMenu(false)}>Ski Equipment Insurance</Link>
-        <Link to="/recreation/snowboard-equipment-insurance" onClick={() => setMobileMenu(false)}>Snowboard Equipment Insurance</Link>
         <Link to="/recreation/travel-insurance" onClick={() => setMobileMenu(false)}>Travel Insurance</Link>
       </div>
     </div>
