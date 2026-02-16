@@ -1,189 +1,139 @@
-/* =========================
-   PAGE WRAPPER
-========================= */
+/* Layout */
 .other-page {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 80px;
-  padding-bottom: 60px;
+  padding: 60px 20px;
 }
 
-/* =========================
-   HERO (PageLayout override)
-========================= */
-.other-page .page-header.hero {
-  background-image: url("../../assets/2.png");
-  background-size: cover;
-  background-position: center;
-  padding: 10rem 2rem 5rem;
-  color: #fff;
-  position: relative;
+/* Hero background */
+.other-insurance-page .page-header {
+  background-image: url("../../assets/142.jpeg");
 }
 
-/* Keep text above overlay */
-.other-page .page-header-inner {
-  position: relative;
-  z-index: 1;
-}
-
-/* Hero typography */
-.other-page .page-title {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-.other-page .page-subtitle {
-  font-size: 1.3rem;
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-/* =========================
-   INTRO SECTION
-========================= */
+/* Intro */
 .other-intro {
   max-width: 900px;
-  margin: 0 auto;
   text-align: center;
 }
 
 .other-intro h2 {
   font-size: 2.4rem;
   margin-bottom: 20px;
-  color: #1a1a1a;
+  color: #0a0642;
 }
 
 .other-intro p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #444;
-  margin-bottom: 15px;
+  color: #2c2c2c;
 }
 
-/* =========================
-   HIGHLIGHTS GRID
-========================= */
+/* Highlights Section */
 .other-highlights {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
 }
 
 .other-highlights h2 {
-  font-size: 2.2rem;
-  text-align: center;
+  font-size: 2rem;
   margin-bottom: 40px;
-  color: #1a1a1a;
+  color: #0a0642;
 }
 
 .other-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
+  gap: 30px;
 }
 
 .other-card {
-  background: #ffffff;
+  background: #f8f9ff;
   padding: 30px 25px;
-  border-radius: 14px;
-  border-top: 4px solid #6e9b2f;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .other-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
 .other-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 14px;
-  color: #1a1a1a;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #0a0642;
 }
 
 .other-card p {
   font-size: 1rem;
-  color: #555;
   line-height: 1.6;
+  color: #333;
 }
 
-/* =========================
-   WHY CHOOSE US
-========================= */
+/* Why Us */
 .other-why-us {
   max-width: 900px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .other-why-us h2 {
-  font-size: 2.2rem;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #1a1a1a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0a0642;
+}
+
+.other-why-us p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #2c2c2c;
 }
 
 .other-why-us ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  display: inline-block;
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
-.other-why-us li {
-  font-size: 1.1rem;
-  margin-bottom: 14px;
-  color: #333;
-  padding-left: 28px;
-  position: relative;
-}
-
-.other-why-us li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #6e9b2f;
-  font-weight: bold;
-}
-
-/* =========================
-   CTA
-========================= */
+/* CTA */
 .other-cta {
-  display: flex;
-  justify-content: center;
+  margin-top: 20px;
 }
 
 .other-cta button {
-  background-color: #6e9b2f;
-  color: #fff;
-  border: none;
-  padding: 16px 36px;
+  background-color: #ffb800;
+  color: #000;
+  padding: 16px 40px;
   font-size: 1.1rem;
-  border-radius: 10px;
-  font-weight: 600;
+  border: none;
+  border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .other-cta button:hover {
-  background-color: #5c8427;
-  transform: translateY(-2px);
+  background-color: #ffb800;
+  transform: scale(1.05);
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* Responsive */
 @media (max-width: 768px) {
-  .other-page {
-    gap: 60px;
+  .other-intro h2 {
+    font-size: 2rem;
   }
 
-  .other-page .page-title {
-    font-size: 2.2rem;
-  }
-
-  .other-intro h2,
   .other-highlights h2,
   .other-why-us h2 {
     font-size: 1.8rem;
+  }
+
+  .other-cta button {
+    width: 100%;
   }
 }

@@ -4,69 +4,86 @@ import "./Recreation.css";
 const Recreation = () => {
   return (
     <div className="recreation-insurance-pages">
-    <PageLayout
-      title="Recreation Insurance"
-      subtitle="Protecting your adventures, water sports, and leisure activities"
-      headerClass="hero"
-    >
-      <div className="recreation-page">
-        {/* INTRODUCTION */}
-        <section className="recreation-intro">
-          <h2>Adventure with Confidence</h2>
-          <p>
-            At Morison Insurance, we understand that recreation comes in many forms.
-            From water sports to snow adventures and everything in between, we provide
-            insurance solutions that protect your equipment, vehicles, and experiences.
-          </p>
-          <p>
-            Explore our recreation coverage options designed to give you peace of mind
-            so you can enjoy your favorite activities safely.
-          </p>
-        </section>
+      <PageLayout
+        title="Recreation & Leisure Insurance"
+        subtitle="Comprehensive protection for your adventures on land, water, and beyond."
+        headerClass="hero"
+        cta={<button>Request a Recreation Quote</button>}
+      >
+        <div className="recreation-page">
+          {/* INTRODUCTION */}
+          <section className="recreation-intro">
+            <h2>Adventure Without Worry</h2>
+            <p>
+              Your leisure time should be about freedom and enjoyment —
+              not risk. At Morison Insurance, we provide specialized
+              coverage designed to protect your recreational vehicles,
+              equipment, and travel experiences.
+            </p>
+            <p>
+              Whether you’re exploring the open water, heading out on
+              a road trip, or investing in high-value sporting equipment,
+              we ensure your adventures are backed by reliable protection.
+            </p>
+          </section>
 
-        {/* TYPES OF INSURANCE */}
-        <section className="recreation-types">
-          <h2>What We Cover</h2>
-          <div className="recreation-grid">
-            <div className="recreation-card">
-              <h3>Watercraft & Boats</h3>
-              <p>Insurance for boats, yachts, seadoos, and other watercraft with full liability protection.</p>
-            </div>
+          {/* TYPES OF INSURANCE */}
+          <section className="recreation-types">
+            <h2>Our Recreation Insurance Solutions</h2>
 
-            <div className="recreation-card">
-              <h3>Snow & Winter Sports</h3>
-              <p>Covering ski equipment, snowboards, and snowmobiles so you can enjoy winter safely.</p>
-            </div>
+            <div className="recreation-grid">
+              <div className="recreation-card">
+                <h3>Watercraft & Marine Cover</h3>
+                <p>
+                  Insurance for boats, yachts, jet skis, and other watercraft
+                  including liability, accidental damage, and theft protection.
+                </p>
+              </div>
 
-            <div className="recreation-card">
-              <h3>Land Vehicles</h3>
-              <p>ATVs, RVs, and travel trailers protected for both adventures and everyday use.</p>
-            </div>
+              <div className="recreation-card">
+                <h3>Winter & Sporting Equipment</h3>
+                <p>
+                  Protection for ski equipment, snowboards, snowmobiles,
+                  and specialized sporting gear.
+                </p>
+              </div>
 
-            <div className="recreation-card">
-              <h3>Travel & Adventure</h3>
-              <p>Coverage for travel-related risks, including rentals, trips, and special recreational events.</p>
+              <div className="recreation-card">
+                <h3>ATVs, RVs & Travel Trailers</h3>
+                <p>
+                  Comprehensive coverage for off-road vehicles, recreational
+                  vehicles, and mobile travel units.
+                </p>
+              </div>
+
+              <div className="recreation-card">
+                <h3>Travel & Adventure Insurance</h3>
+                <p>
+                  Coverage for travel-related risks including trips,
+                  rentals, and organized recreational events.
+                </p>
+              </div>
             </div>
+          </section>
+
+          {/* WHY CHOOSE US */}
+          <section className="recreation-why-us">
+            <h2>Why Choose Morison Recreation Insurance?</h2>
+            <ul>
+              <li>Flexible coverage tailored to your lifestyle</li>
+              <li>Protection for high-value recreational equipment</li>
+              <li>Worldwide coverage options for international travel</li>
+              <li>Dedicated claims support when you need it most</li>
+              <li>Access to leading specialized insurers</li>
+            </ul>
+          </section>
+
+          {/* CALL TO ACTION */}
+          <div className="recreation-cta">
+            <button>Get Protected Before Your Next Adventure</button>
           </div>
-        </section>
-
-        {/* WHY CHOOSE US */}
-        <section className="recreation-why-us">
-          <h2>Why Choose Morison Recreation Insurance?</h2>
-          <ul>
-            <li>Customizable coverage tailored to your lifestyle</li>
-            <li>Specialized protection for valuable recreational equipment</li>
-            <li>Worldwide coverage for international adventures</li>
-            <li>Expert guidance and dedicated claims support</li>
-          </ul>
-        </section>
-
-        {/* CALL TO ACTION */}
-        <div className="recreation-cta">
-          <button>Get a Quote for Your Adventure</button>
         </div>
-      </div>
-    </PageLayout>
+      </PageLayout>
     </div>
   );
 };

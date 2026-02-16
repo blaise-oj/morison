@@ -1,17 +1,19 @@
-import React from 'react'
-import './Hero.css'
+import React from "react";
+import "./Hero.css";
 
-const Hero = () => {
+const Hero = ({ title, subtitle, image }) => {
   return (
-    <div className='hero'>
-        <div className= 'hero-text'>
-            <h1>Home Insurance</h1>
-            <p>Safeguard your most valuable investment with the right insurance coverage - just for you!</p>
+    <div className="hero">
+      <img src={image} alt={title} className="hero-bg" />
 
-        </div>
-      
+      <div className="hero-overlay"></div>
+
+      <div className="hero-text">
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

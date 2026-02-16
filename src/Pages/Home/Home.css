@@ -1,161 +1,208 @@
-/* ================================
-   Home Page Styling
-   Scoped only for Home.jsx
-================================ */
+/* =========================
+   GLOBAL PAGE STYLING
+========================= */
+.home-page {
+  background-color: #f8f9fc;
+}
 
+/* Hero background */
+.home-page .page-header {
+  background-image: url("../../assets/2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home-page .page-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 0, 58, 0.85) 0%,
+    rgba(8, 0, 58, 0.6) 50%,
+    rgba(8, 0, 58, 0.4) 100%
+  );
+}
+
+.home-page .page-header * {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   INTRO SECTION
+========================= */
 .home-intro {
   text-align: center;
-  margin-bottom: 5rem;
-  padding: 0 1rem;
+  margin: 6rem auto;
+  padding: 0 1.5rem;
+  max-width: 900px;
 }
 
 .home-intro h2 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  color: #08003a; /* deep purple/navy accent */
+  margin-bottom: 1.5rem;
+  color: #08003a;
 }
 
 .home-intro p {
-  font-size: 1.25rem;
-  line-height: 1.8;
-  color: #333;
-  max-width: 700px;
-  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #555;
 }
-.home-page .page-header {
-  background-image: url("../../assets/2.png");
-} 
 
-/* SERVICES SECTION */
+/* =========================
+   SERVICES SECTION
+========================= */
 .home-services {
   text-align: center;
-  margin-bottom: 5rem;
-  padding: 0 1rem;
+  margin-bottom: 6rem;
+  padding: 0 2rem;
 }
 
 .home-services h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
   color: #08003a;
 }
 
 .home-services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  align-items: stretch;
+  gap: 2.5rem;
 }
 
 .home-service-card {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  background: #ffffff;
+  border-radius: 1.2rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  border: 1px solid #f0f0f5;
 }
 
 .home-service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #ffb800;
 }
 
 .home-service-card h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   color: #08003a;
+  font-weight: 600;
 }
 
 .home-service-card p {
-  color: #555;
   font-size: 1rem;
-  line-height: 1.6;
-  flex-grow: 1;
+  line-height: 1.7;
+  color: #666;
 }
 
-/* WHY CHOOSE US SECTION */
+/* =========================
+   WHY CHOOSE US
+========================= */
 .home-why-us {
-  max-width: 900px;
-  margin: 0 auto 5rem auto;
-  padding: 0 1rem;
-  text-align: center;
+  max-width: 950px;
+  margin: 0 auto 6rem auto;
+  padding: 3rem 2rem;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .home-why-us h2 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 700;
   margin-bottom: 2rem;
   color: #08003a;
+  text-align: center;
 }
 
 .home-why-us ul {
-  list-style: disc inside;
-  color: #333;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .home-why-us li {
-  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #444;
 }
 
-/* CTA BUTTON */
+.home-why-us li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ffb800;
+  font-weight: bold;
+}
+
+/* =========================
+   CTA BUTTON
+========================= */
 .page-cta button {
   font-size: 1.1rem;
-  padding: 0.75rem 2.5rem;
+  padding: 0.9rem 3rem;
   background-color: #ffb800;
   color: #08003a;
   font-weight: 600;
   border: none;
-  border-radius: 0.75rem;
+  border-radius: 0.8rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(255, 184, 0, 0.3);
 }
 
 .page-cta button:hover {
   background-color: #ffa500;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(255, 165, 0, 0.4);
 }
 
-/* RESPONSIVE DESIGN */
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
 @media (max-width: 1024px) {
   .home-intro h2 {
-    font-size: 2.25rem;
+    font-size: 2.2rem;
   }
+
   .home-services h2,
   .home-why-us h2 {
-    font-size: 1.75rem;
-  }
-  .home-service-card h3 {
-    font-size: 1.35rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 768px) {
+  .home-intro {
+    margin: 4rem auto;
+  }
+
   .home-intro h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
+
   .home-intro p {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
+
   .home-services-grid {
     grid-template-columns: 1fr;
   }
-  .home-why-us ul {
-    text-align: center;
-    padding: 0;
-  }
-  .home-why-us li {
-    margin-bottom: 0.8rem;
-  }
+
   .page-cta button {
-    width: 80%;
+    width: 85%;
   }
 }

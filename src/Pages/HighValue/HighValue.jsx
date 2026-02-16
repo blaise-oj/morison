@@ -4,85 +4,91 @@ import "./HighValue.css";
 const HighValue = () => {
   return (
     <div className="highvalue-pages">
-    <PageLayout
-      title="High-Value Insurance"
-      subtitle="Specialized protection for what matters most"
-      headerClass="hero"
-      cta={<button>Request a Private Consultation</button>}
-    >
-      <div className="highvalue-page">
-        {/* INTRO */}
-        <section className="highvalue-intro">
-          <h2>Protection Designed for High-Value Assets</h2>
-          <p>
-            High-value assets require more than standard insurance.
-            At Morison Insurance, we provide tailored coverage solutions
-            for luxury homes, premium vehicles, fine art, jewellery,
-            and other valuable possessions.
-          </p>
-          <p>
-            Our high-value insurance solutions are crafted to protect
-            your lifestyle, preserve your wealth, and deliver peace of mind
-            with personalized risk management.
-          </p>
-        </section>
+      <PageLayout
+        title="High-Value & Private Client Insurance"
+        subtitle="Bespoke protection for luxury assets, exclusive properties, and high-net-worth lifestyles."
+        headerClass="hero"
+        cta={<button>Schedule a Private Consultation</button>}
+      >
+        <div className="highvalue-page">
+          {/* INTRO */}
+          <section className="highvalue-intro">
+            <h2>Protection Beyond Standard Insurance</h2>
+            <p>
+              High-value assets demand more than ordinary coverage.
+              At Morison Insurance, we design bespoke insurance
+              solutions tailored to protect your wealth, lifestyle,
+              and legacy.
+            </p>
+            <p>
+              From luxury residences and exotic vehicles to fine art
+              and rare collections, we work with specialized insurers
+              to provide enhanced limits, agreed value protection,
+              and discreet claims handling.
+            </p>
+          </section>
 
-        {/* ASSET TYPES */}
-        <section className="highvalue-assets">
-          <h2>What We Protect</h2>
+          {/* ASSET TYPES */}
+          <section className="highvalue-assets">
+            <h2>What We Protect</h2>
 
-          <div className="highvalue-grid">
-            <div className="highvalue-card">
-              <h3>Luxury Homes</h3>
-              <p>
-                Bespoke coverage for high-end residences, vacation homes,
-                and exclusive properties with extended rebuilding protection.
-              </p>
+            <div className="highvalue-grid">
+              <div className="highvalue-card">
+                <h3>Luxury Residences</h3>
+                <p>
+                  Comprehensive cover for high-end homes, holiday
+                  properties, and exclusive estates with extended
+                  rebuilding and contents protection.
+                </p>
+              </div>
+
+              <div className="highvalue-card">
+                <h3>Luxury & Collector Vehicles</h3>
+                <p>
+                  Agreed value insurance for premium, exotic,
+                  and collectible vehicles with worldwide
+                  coverage options.
+                </p>
+              </div>
+
+              <div className="highvalue-card">
+                <h3>Jewellery & Timepieces</h3>
+                <p>
+                  Specialized protection for engagement rings,
+                  bespoke jewellery, and luxury watches —
+                  including worldwide cover.
+                </p>
+              </div>
+
+              <div className="highvalue-card">
+                <h3>Fine Art & Private Collections</h3>
+                <p>
+                  Tailored insurance for art collections,
+                  antiques, rare memorabilia, and
+                  investment-grade collectibles.
+                </p>
+              </div>
             </div>
+          </section>
 
-            <div className="highvalue-card">
-              <h3>Luxury & Exotic Vehicles</h3>
-              <p>
-                Specialized auto insurance for premium, exotic,
-                and collector vehicles with agreed value coverage.
-              </p>
-            </div>
+          {/* WHY US */}
+          <section className="highvalue-why-us">
+            <h2>Why Choose Morison Private Client Insurance?</h2>
+            <ul>
+              <li>Access to specialist high-net-worth insurers</li>
+              <li>Customized policies with higher coverage limits</li>
+              <li>Agreed value and worldwide protection options</li>
+              <li>Confidential, priority claims handling</li>
+              <li>Dedicated advisory support</li>
+            </ul>
+          </section>
 
-            <div className="highvalue-card">
-              <h3>Jewellery & Watches</h3>
-              <p>
-                Comprehensive protection for engagement rings,
-                fine jewellery, and luxury timepieces.
-              </p>
-            </div>
-
-            <div className="highvalue-card">
-              <h3>Fine Art & Collectibles</h3>
-              <p>
-                Tailored insurance for art collections, antiques,
-                rare items, and valuable personal collections.
-              </p>
-            </div>
+          {/* CTA */}
+          <div className="highvalue-cta">
+            <button>Speak to a Private Client Advisor</button>
           </div>
-        </section>
-
-        {/* WHY US */}
-        <section className="highvalue-why-us">
-          <h2>Why Morison High-Value Insurance?</h2>
-          <ul>
-            <li>Access to specialized high-net-worth insurers</li>
-            <li>Customized coverage with higher policy limits</li>
-            <li>Worldwide protection options</li>
-            <li>Discreet claims handling and expert support</li>
-          </ul>
-        </section>
-
-        {/* CTA */}
-        <div className="highvalue-cta">
-          <button>Request a Private Consultation</button>
         </div>
-      </div>
-    </PageLayout>
+      </PageLayout>
     </div>
   );
 };

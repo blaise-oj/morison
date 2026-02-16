@@ -1,155 +1,158 @@
-/* General page layout */
+/* Layout */
 .business-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 20px 60px; /* top space for navbar */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #0b0a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 60px 20px;
 }
 
-/* Section headings */
-.business-page h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #08103a;
+/* Hero background */
+.business-insurance-page .page-header {
+  background-image: url("../../assets/126.jpeg");
+}
+
+/* Intro */
+.business-intro {
+  max-width: 900px;
   text-align: center;
 }
 
-/* Paragraphs */
-.business-page p {
+.business-intro h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #0a0642;
+}
+
+.business-intro p {
   font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 20px;
+  color: #2c2c2c;
+}
+
+/* Who We Protect */
+.business-types {
+  max-width: 1100px;
+  width: 100%;
   text-align: center;
 }
 
-/* INTRO section */
-.business-intro {
-  margin-bottom: 60px;
-  background: #f4f6fb;
-  padding: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-}
-
-/* BUSINESS TYPES grid */
-.business-types {
-  margin-bottom: 60px;
+.business-types h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0a0642;
 }
 
 .business-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  margin-top: 30px;
 }
 
 .business-card {
-  background: #ffffff;
-  padding: 25px 20px;
-  border-radius: 12px;
+  background: #f8f9ff;
+  padding: 30px 25px;
+  border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
 }
 
 .business-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
 .business-card h3 {
   font-size: 1.3rem;
-  margin-bottom: 12px;
-  color: #08103a;
+  margin-bottom: 15px;
+  color: #0a0642;
 }
 
 .business-card p {
   font-size: 1rem;
-  line-height: 1.6;
   color: #333;
-}
-.business-insurance-page .page-header {
-  background-image: url("../../assets/126.jpeg");
-}
-/* COVERAGE section */
-.business-coverages {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.business-coverages ul {
-  list-style: inside square;
-  display: inline-block;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.business-coverages li {
-  font-size: 1.05rem;
   line-height: 1.6;
-  margin-bottom: 10px;
 }
 
-/* WHY US section */
-.business-why-us {
-  margin-bottom: 60px;
+/* Coverage */
+.business-coverages {
+  max-width: 900px;
   text-align: center;
+}
+
+.business-coverages h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #0a0642;
+}
+
+.coverage-list ul {
+  list-style: disc;
+  text-align: left;
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2c2c2c;
+}
+
+/* Why Us */
+.business-why-us {
+  max-width: 900px;
+  text-align: center;
+}
+
+.business-why-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0a0642;
 }
 
 .business-why-us p {
-  max-width: 800px;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2c2c2c;
 }
 
 .business-why-us ul {
-  list-style: disc inside;
-  display: inline-block;
+  list-style: disc;
   text-align: left;
-}
-
-.business-why-us li {
-  margin-bottom: 10px;
+  display: inline-block;
   font-size: 1.05rem;
+  line-height: 1.8;
 }
 
-/* CTA button */
+/* CTA */
 .business-cta {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .business-cta button {
-  background: #08103a;
-  color: #fff;
-  border: none;
-  padding: 15px 35px;
+  background-color: #ffb800;
+  color: #000;
+  padding: 16px 40px;
   font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 8px;
+  border: none;
+  border-radius: 50px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .business-cta button:hover {
-  background: #0b1b6c;
-  transform: translateY(-3px);
+  background-color: #ffb800;
+  transform: scale(1.05);
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
-  .business-page {
-    padding: 80px 15px 40px;
+  .business-intro h2 {
+    font-size: 2rem;
   }
 
-  .business-page h2 {
+  .business-types h2,
+  .business-coverages h2,
+  .business-why-us h2 {
     font-size: 1.8rem;
-  }
-
-  .business-card {
-    padding: 20px 15px;
   }
 
   .business-cta button {
