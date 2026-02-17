@@ -2,33 +2,67 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Footer.css";
 
+// ✅ Import images from assets
+import whatsappIcon from "../../assets/whatsapp.jpeg";
+import phoneIcon from "../../assets/phone.jpeg";
+import emailIcon from "../../assets/email.jpeg";
+
 const Footer = () => {
-  // Smooth scroll link component
-  const ScrollLink = ({ to, children }) => {
-    const navigate = useNavigate();
-    return (
-      <Link
-        to={to}
-        onClick={() => {
-          navigate(to);
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
-        className="footer-link"
-      >
-        {children}
-      </Link>
-    );
-  };
+  const navigate = useNavigate();
+
+  const ScrollLink = ({ to, children }) => (
+    <Link
+      to={to}
+      className="footer-link"
+      onClick={() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+    >
+      {children}
+    </Link>
+  );
 
   return (
     <footer className="footer">
       <div className="footer-top">
+
+        {/* ================= LOGO SECTION ================= */}
         <div className="footer-logo">
           <h2>Morison Insurance</h2>
           <p>Protecting what matters most</p>
+
+          {/* Contact Info */}
+          <div className="footer-contact">
+
+            <a
+              href="https://wa.me/13435127761"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-item"
+            >
+              <img src={whatsappIcon} alt="WhatsApp" />
+              <span>+1 343 512 7761</span>
+            </a>
+
+            <a href="tel:+13435127761" className="contact-item">
+              <img src={phoneIcon} alt="Call Us" />
+              <span>Call Us</span>
+            </a>
+
+            <a
+              href="mailto:info@morisoninsurance.co.ke"
+              className="contact-item"
+            >
+              <img src={emailIcon} alt="Email" />
+              <span>info@morisoninsurance.co.ke</span>
+            </a>
+
+          </div>
         </div>
 
+        {/* ================= LINKS ================= */}
         <div className="footer-links">
+
           {/* Company */}
           <div className="footer-section">
             <h4>Company</h4>
@@ -83,11 +117,15 @@ const Footer = () => {
               <button>Subscribe</button>
             </div>
           </div>
+
         </div>
       </div>
 
+      {/* ================= BOTTOM ================= */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Morison Insurance. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} Morison Insurance. All rights reserved.
+        </p>
       </div>
     </footer>
   );

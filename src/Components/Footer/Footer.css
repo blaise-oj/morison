@@ -1,52 +1,121 @@
+/* ===================== BASE FOOTER ===================== */
+
 .footer {
-  background: linear-gradient(135deg, #1f3a5f 0%, #0f2c48 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #0f2c48 0%, #1c3b63 100%);
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
-  padding: 60px 20px 20px;
+  padding: 70px 8% 30px;
   position: relative;
-  z-index: 10;
+  overflow: hidden;
 }
+
+/* Top animated accent line */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #6e9b2f, #c1e85a);
+  animation: slideLine 6s linear infinite;
+}
+
+@keyframes slideLine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* ===================== LAYOUT ===================== */
 
 .footer-top {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 40px;
+  gap: 70px;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===================== LOGO ===================== */
+
+.footer-logo {
+  max-width: 320px;
 }
 
 .footer-logo h2 {
   font-size: 28px;
-  color: #6e9b2f;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
-}
-
-.footer-logo h2:hover {
-  transform: scale(1.05);
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
 }
 
 .footer-logo p {
-  color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 25px;
 }
+
+/* ===================== CONTACT ===================== */
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Contact links */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Icon styling */
+.contact-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(6px);
+}
+
+.contact-item:hover img {
+  transform: scale(1.2) rotate(8deg);
+}
+
+/* ===================== LINKS SECTION ===================== */
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
 }
 
 .footer-section {
-  min-width: 160px;
+  min-width: 180px;
 }
 
 .footer-section h4 {
-  font-size: 16px;
-  margin-bottom: 12px;
-  color: #6e9b2f;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c1e85a;
 }
 
 .footer-section ul {
@@ -55,115 +124,108 @@
 }
 
 .footer-section ul li {
-  margin-bottom: 8px;
-  font-size: 14px;
-  transition: color 0.3s, transform 0.3s;
+  margin-bottom: 12px;
 }
 
-.footer-section ul li:hover {
-  color: #c1e85a;
-  transform: translateX(5px);
-}
-
-.footer-section ul li a {
-  color: inherit;
+/* Footer links */
+.footer-link {
   text-decoration: none;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  position: relative;
+  transition: all 0.3s ease;
 }
+
+/* Underline animation */
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #6e9b2f;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* ===================== NEWSLETTER ===================== */
 
 .newsletter p {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  margin-bottom: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .newsletter-input {
   display: flex;
   gap: 10px;
-  margin-bottom: 15px;
 }
 
 .newsletter-input input {
   flex: 1;
-  padding: 8px 12px;
-  border-radius: 4px;
+  padding: 12px 14px;
+  border-radius: 10px;
   border: none;
   outline: none;
+  font-size: 14px;
 }
 
 .newsletter-input button {
-  background: #6e9b2f;
+  padding: 12px 18px;
+  border-radius: 10px;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  background: linear-gradient(135deg, #6e9b2f, #8bc34a);
   color: #fff;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
+  transition: all 0.3s ease;
 }
 
 .newsletter-input button:hover {
-  background: #5a7b24;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(110, 155, 47, 0.4);
 }
 
-.social-icons {
-  display: flex;
-  gap: 12px;
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.social-icons a {
-  color: #fff;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.social-icons a:hover {
-  color: #6e9b2f;
-  transform: scale(1.2);
-}
+/* ===================== FOOTER BOTTOM ===================== */
 
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Sticky effect */
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #6e9b2f;
-  animation: slide 2s infinite;
-}
+/* ===================== RESPONSIVE ===================== */
 
-@keyframes slide {
-  0% {transform: translateX(-100%);}
-  50% {transform: translateX(100%);}
-  100% {transform: translateX(-100%);}
-}
-
-/* Responsive */
 @media (max-width: 992px) {
   .footer-top {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 50px;
   }
 
   .footer-links {
-    flex-direction: column;
+    gap: 40px;
   }
+}
 
+@media (max-width: 768px) {
   .newsletter-input {
     flex-direction: column;
   }
 
   .newsletter-input button {
     width: 100%;
+  }
+
+  .footer {
+    padding: 60px 6% 25px;
   }
 }
