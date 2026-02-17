@@ -372,7 +372,6 @@ const Navbar = () => {
         <Link to="/home/home-equipment-breakdown" onClick={() => setMobileMenu(false)}>Home Equipment Breakdown</Link>
         <Link to="/home/outbuilding-insurance" onClick={() => setMobileMenu(false)}>Outbuilding Insurance</Link>
         <Link to="/home/garden-insurance" onClick={() => setMobileMenu(false)}>Garden Insurance</Link>
-        <Link to="/home/photography-equipment" onClick={() => setMobileMenu(false)}>Photography Equipment</Link>
         <Link to="/home/home-daycare-insurance" onClick={() => setMobileMenu(false)}>Home Daycare Insurance</Link>
         <Link to="/home/discounts" onClick={() => setMobileMenu(false)}>Discounts</Link>
       </div>

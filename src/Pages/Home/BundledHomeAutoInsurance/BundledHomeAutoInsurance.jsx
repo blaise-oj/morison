@@ -1,141 +1,143 @@
 import React from "react";
 import PageLayout from "../../Shared/PageLayout/PageLayout";
-import carap from "../../../assets/carap.jpg"; // change image as needed
+import carap from "../../../assets/carap.jpg";
 import "./BundledHomeAutoInsurance.css";
 
 const BundledHomeAutoInsurance = () => {
   return (
     <div className="bundled-home-auto-insurance-page">
-    <PageLayout
-      title="Bundle Your Home and Auto Insurance in Ontario"
-      subtitle="We shop top Canadian insurers to tailor coverage for your home and car."
-      headerClass="hero"
-    >
-      {/* INTRO */}
-      <section>
-        <p>
-          Tailored coverage, claims advocacy, and real savings — bundling your
-          home and auto insurance in Ontario helps you protect what matters most
-          while paying less. Morison Insurance compares quotes from dozens of
-          trusted Canadian insurers to find coverage that fits your life.
-        </p>
+      <PageLayout
+        title="Bundle Your Home & Motor Insurance in Kenya"
+        subtitle="Save more when you combine your home and comprehensive motor insurance."
+        headerClass="hero"
+      >
 
-        <ul>
-          <li>Tailored coverage for your exact needs</li>
-          <li>On-your-side claims advocacy</li>
-          <li>Save up to 25% by bundling home and auto</li>
-        </ul>
+        {/* INTRO */}
+        <section>
+          <p>
+            Protect your home and vehicle under one trusted insurance solution.
+            Bundling your Home Insurance and Comprehensive Motor Insurance with 
+            the same provider can unlock discounts, simplify policy management, 
+            and improve your overall coverage.
+          </p>
 
-        <p>
-          Complete the form or call <strong>1-800-463-8074</strong> to speak with
-          a licensed broker about bundled home and auto insurance today.
-        </p>
-      </section>
+          <ul>
+            <li>Cost savings through multi-policy discounts</li>
+            <li>One renewal date for easier management</li>
+            <li>Dedicated claims support</li>
+          </ul>
 
-      {/* WHAT IS BUNDLING */}
-      <section>
-        <h2>What Is Bundled Home and Auto Insurance?</h2>
-        <p>
-          A home and auto insurance bundle combines both policies with the same
-          insurer, unlocking exclusive multi-policy discounts. Bundling
-          simplifies your coverage, reduces paperwork, and lowers your overall
-          premiums.
-        </p>
-      </section>
+          <p>
+            Call <strong>+1 343 512 7761</strong> to speak with a licensed broker
+            about bundled insurance options today.
+          </p>
+        </section>
 
-      {/* WHY BUNDLE */}
-      <section>
-        <h2>Why Bundle Home and Auto Insurance?</h2>
+        {/* WHAT IS BUNDLING */}
+        <section>
+          <h2>What Is Home & Motor Insurance Bundling?</h2>
+          <p>
+            Bundling means purchasing both your Home Insurance and Comprehensive 
+            Motor Insurance from the same insurer. This allows you to benefit from 
+            multi-policy discounts and streamlined coverage management.
+          </p>
+        </section>
 
-        <h3>Lower Premiums</h3>
-        <p>
-          Insurance companies reward customers who consolidate coverage.
-          Bundling can save you up to 25% while maintaining comprehensive
-          protection.
-        </p>
+        {/* WHY BUNDLE */}
+        <section>
+          <h2>Why Bundle Your Policies?</h2>
 
-        <h3>Save Time</h3>
-        <p>
-          One insurer means fewer renewal dates, simpler updates, and less
-          stress managing your policies.
-        </p>
+          <h3>Lower Overall Premiums</h3>
+          <p>
+            Insurers in Kenya often offer multi-policy discounts when you insure
+            multiple assets with them. This can result in meaningful annual savings.
+          </p>
 
-        <h3>Single Deductible</h3>
-        <p>
-          In some cases, bundled policies require only one deductible if both
-          your home and vehicle are damaged in the same incident.
-        </p>
+          <h3>Simplified Policy Management</h3>
+          <p>
+            One insurer means one renewal date, fewer documents, and easier updates.
+          </p>
 
-        <h3>Improved Coverage</h3>
-        <p>
-          Bundling often unlocks enhanced protection like umbrella liability
-          and excess coverage options.
-        </p>
-      </section>
+          <h3>Better Risk Assessment</h3>
+          <p>
+            When your home and vehicle are insured together, insurers may offer
+            enhanced coverage terms based on your full risk profile.
+          </p>
 
-      {/* WHY MORISON */}
-      <section>
-        <h2>Why Choose Morison for Your Bundle?</h2>
-        <ul>
-          <li>4,500+ 5-Star Reviews</li>
-          <li>Ontario Brokerage of the Year</li>
-          <li>Dozens of insurer partners</li>
-          <li>On-site claims specialists</li>
-          <li>Dedicated brokers — not call centers</li>
-        </ul>
-      </section>
+          <h3>Streamlined Claims Process</h3>
+          <p>
+            In the event of a major incident affecting both assets, dealing with
+            one insurer simplifies the claims process.
+          </p>
+        </section>
 
-      {/* OPTIONAL EXTRAS */}
-      <section>
-        <h2>Optional Add-Ons for Your Bundle</h2>
+        {/* WHY MORISON */}
+        <section>
+          <h2>Why Choose Morison for Your Insurance Bundle?</h2>
+          <ul>
+            <li>Access to Leading Kenyan Insurance Providers</li>
+            <li>Competitive Quote Comparisons</li>
+            <li>Professional Risk Advisory</li>
+            <li>Dedicated Claims Assistance</li>
+          </ul>
+          <p>
+            We work on your behalf — not the insurer’s. Our brokers compare options
+            across trusted Kenyan insurance companies to ensure you receive the
+            right protection at a competitive premium.
+          </p>
+        </section>
 
-        <ul>
-          <li>Equipment Breakdown</li>
-          <li>Loss of Use Protection</li>
-          <li>Accident Forgiveness</li>
-          <li>Water Damage Coverage</li>
-          <li>Identity Theft Protection</li>
-          <li>Uninsured Motorist Coverage</li>
-        </ul>
-      </section>
+        {/* OPTIONAL EXTRAS */}
+        <section>
+          <h2>Optional Add-Ons for Your Bundle</h2>
 
-      {/* FAQ */}
-      <section>
-        <h2>Frequently Asked Questions</h2>
+          <ul>
+            <li>Political Violence & Terrorism Cover</li>
+            <li>Excess Buy-Back Protection</li>
+            <li>Loss of Use (Alternative Accommodation)</li>
+            <li>Flood & Water Damage Cover</li>
+            <li>Personal Accident Cover</li>
+            <li>Windscreen & Entertainment System Cover</li>
+          </ul>
+        </section>
 
-        <h4>How much can I save?</h4>
-        <p>
-          Savings vary by profile, but bundling home and auto insurance can save
-          up to 25%.
-        </p>
+        {/* FAQ */}
+        <section>
+          <h2>Frequently Asked Questions</h2>
 
-        <h4>Do both policies need to be with the same insurer?</h4>
-        <p>
-          Yes. Bundled discounts apply when home and auto policies are issued by
-          the same insurer.
-        </p>
+          <h4>How much can I save by bundling?</h4>
+          <p>
+            Savings vary depending on the insurer, value of your assets, and
+            your risk profile. Our brokers will compare options to maximize value.
+          </p>
 
-        <h4>Can I switch my existing policies?</h4>
-        <p>
-          Absolutely. A Morison broker will compare switching now versus waiting
-          until renewal to maximize savings.
-        </p>
-      </section>
+          <h4>Do both policies need to be with the same insurer?</h4>
+          <p>
+            Yes. Multi-policy discounts apply when both Home and Motor policies
+            are issued by the same insurance company.
+          </p>
 
-      {/* CTA */}
-      <section>
-        <h2>Ready to Save on Your Home and Auto Insurance?</h2>
-        <p>
-          Our brokers compare Ontario’s leading insurers to build a bundle that
-          delivers the right protection at the right price.
-        </p>
+          <h4>Can I switch my policies before renewal?</h4>
+          <p>
+            Yes. We can assess whether switching mid-term or waiting until renewal
+            provides better financial benefit.
+          </p>
+        </section>
 
-        <p>
-          Call <strong>1-800-463-8074</strong> or complete the form on this page
-          to get your free quote today.
-        </p>
-      </section>
-    </PageLayout>
+        {/* CTA */}
+        <section>
+          <h2>Ready to Save on Your Insurance?</h2>
+          <p>
+            Let our brokers compare Kenya’s leading insurers and build a bundle
+            that protects your home and vehicle — while helping you save.
+          </p>
+
+          <p>
+            Call <strong>+1 343 512 7761</strong> or request your free quote today.
+          </p>
+        </section>
+
+      </PageLayout>
     </div>
   );
 };

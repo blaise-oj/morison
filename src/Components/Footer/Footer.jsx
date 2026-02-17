@@ -70,7 +70,7 @@ const Footer = () => {
               <li><Link to="/other/our-story" className="footer-link">Our Story</Link></li>
               <li><Link to="/other/our-team" className="footer-link">Our Team</Link></li>
               <li><Link to="/other/our-values" className="footer-link">Our Values</Link></li>
-              <li><Link to="/other/careers" className="footer-link">Careers</Link></li>
+              
             </ul>
           </div>
 
@@ -91,10 +91,10 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Support</h4>
             <ul>
-              <li><Link to="/other/contact-us" className="footer-link">Contact Us</Link></li>
+              {/*<li><Link to="/other/contact-us" className="footer-link">Contact Us</Link></li>
               <li><Link to="/other/faq" className="footer-link">FAQ</Link></li>
               <li><Link to="/other/claims" className="footer-link">Claims</Link></li>
-              <li><Link to="/other/resources" className="footer-link">Resources</Link></li>
+              <li><Link to="/other/resources" className="footer-link">Resources</Link></li>*/}
             </ul>
           </div>
 
@@ -102,9 +102,9 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Legal</h4>
             <ul>
-              <li><Link to="/other/terms-of-service" className="footer-link">Terms of Service</Link></li>
+              {/*<li><Link to="/other/terms-of-service" className="footer-link">Terms of Service</Link></li>
               <li><Link to="/other/privacy-policy" className="footer-link">Privacy Policy</Link></li>
-              <li><Link to="/other/cookie-policy" className="footer-link">Cookie Policy</Link></li>
+              <li><Link to="/other/cookie-policy" className="footer-link">Cookie Policy</Link></li>*/}
             </ul>
           </div>
 
