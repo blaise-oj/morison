@@ -154,45 +154,24 @@
   opacity: 0.9;
 }
 
-.home-cta button {
+.primary-btn {
+  display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.1rem;
   font-weight: 600;
   background-color: #ffb800;
   color: #08003a;
-  border: none;
   border-radius: 0.8rem;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 10px 25px rgba(255, 184, 0, 0.35);
 }
 
-.home-cta button:hover {
+.primary-btn:hover {
   background-color: #ffa500;
   transform: translateY(-4px);
   box-shadow: 0 15px 35px rgba(255, 165, 0, 0.45);
-}
-
-
-/* =================================
-   HERO CTA BUTTON (Top)
-================================= */
-
-.page-cta button {
-  font-size: 1.1rem;
-  padding: 0.9rem 2.5rem;
-  background-color: #ffb800;
-  color: #08003a;
-  font-weight: 600;
-  border: none;
-  border-radius: 0.8rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.page-cta button:hover {
-  background-color: #ffa500;
-  transform: translateY(-3px);
 }
 
 

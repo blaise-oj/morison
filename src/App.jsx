@@ -8,6 +8,8 @@ import { BusinessRoutes } from "./Routes/BusinessRoutes";
 import { HighValueRoutes } from "./Routes/HighValueRoutes";
 import { OtherRoutes } from "./Routes/OtherRoutes";
 import { RecreationRoutes } from "./Routes/RecreationRoutes";
+import {QuoteRoutes} from "./Routes/QuoteRoutes";
+
 
 const Placeholder = ({ title }) => (
   <div style={{ padding: "120px 40px" }}>
@@ -23,14 +25,13 @@ function App() {
         {/* Redirect root to home */}
         <Route path="/" element={<Navigate to="/home" replace />} />
 
-        {/* Home & Auto */}
         {HomeRoutes}
         {AutoRoutes}
-        {/* High Value Assets */}
         {HighValueRoutes}
         {BusinessRoutes}
         {OtherRoutes}
         {RecreationRoutes}
+        {QuoteRoutes}
 
 
          {/* Catch-all */}

@@ -1,6 +1,7 @@
 // src/Pages/Home/Home.jsx
 import React from "react";
 import PageLayout from "../Shared/PageLayout/PageLayout";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
@@ -8,7 +9,9 @@ const Home = () => {
     <PageLayout
       title="Insurance Made Simple. Protection Made Personal."
       subtitle="Reliable insurance solutions tailored for individuals, families, and businesses across Kenya."
-      cta={<button>Request a Free Quote</button>}
+      cta={<Link to="/quote" className="primary-btn">
+        Request a Free Quote
+      </Link>}
       headerClass="hero"
     >
       {/* INTRO */}
@@ -80,7 +83,9 @@ const Home = () => {
           Speak to our team today and get a tailored insurance solution that
           fits your needs and budget.
         </p>
-        <button>Request Your Free Quote</button>
+        <Link to="/quote" className="primary-btn">
+        Request a Free Quote
+      </Link>
       </section>
     </PageLayout>
   );
